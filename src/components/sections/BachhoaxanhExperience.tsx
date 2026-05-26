@@ -40,7 +40,7 @@ export const BachhoaxanhExperience = () => {
                                     <ul className="space-y-3 pl-4">
                                         {[
                                             "Led the seamless migration of the Bachhoaxanh website from .NET Framework to .NET Core, ensuring robust, stable operations for a high-traffic e-commerce platform.",
-                                            "Optimized key business modules; reduced shopping cart response time from over 2 seconds to under 300ms, and ensured all other site requests executed in under 200ms, significantly improving system performance and user experience.",
+                                            "Optimized key business modules; reduced shopping cart response time from over 2 seconds to under 200ms, and ensured all other site requests executed in under 200ms, significantly improving system performance and user experience.",
                                         ].map((bullet, i) => (
                                             <li
                                                 key={i}

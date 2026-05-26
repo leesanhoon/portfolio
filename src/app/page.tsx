@@ -5,6 +5,7 @@ import { SidebarInfo } from "@/components/sections/SidebarInfo";
 import { EasybookExperience } from "@/components/sections/EasybookExperience";
 import { MWGExperience } from "@/components/sections/MWGExperience";
 import { BachhoaxanhExperience } from "@/components/sections/BachhoaxanhExperience";
+import { HighlightProject } from "@/components/sections/HighlightProject";
 import { AwardsSection } from "@/components/sections/AwardsSection";
 
 export default function Home() {
@@ -35,6 +36,9 @@ export default function Home() {
                         <MWGExperience />
                         <BachhoaxanhExperience />
                     </div>
+
+                    {/* Highlight Project Section */}
+                    <HighlightProject />
 
                     {/* Awards Section */}
                     <AwardsSection />

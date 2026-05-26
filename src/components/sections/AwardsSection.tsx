@@ -83,8 +83,8 @@ export const AwardsSection = () => {
                             <ul className="grid grid-cols-1 gap-4">
                                 {[
                                     "Successfully migrated the Bachhoaxanh website from .NET Framework to .NET Core, ensuring stable operation of the entire system.",
-                                    "Optimized system performance: reduced shopping cart response time from over 2 seconds to under 500ms, significantly enhancing user experience.",
-                                    "Maintained maximum response time for other website requests at no more than 300ms, enabling smooth and fast website performance.",
+                                    "Optimized system performance: reduced shopping cart response time from over 2 seconds to under 200ms, significantly enhancing user experience.",
+                                    "Maintained maximum response time for other website requests at no more than 200ms, enabling smooth and fast website performance.",
                                     "Redesigned the system architecture by separating the code into distinct service layers, making management, development, and maintenance easier and more scalable for the future.",
                                     "Refactored and reorganized the system's logic structure to ensure clean, maintainable code while preserving all existing business rules as per current requirements.",
                                     "Delivered overall performance improvements, strengthening the technical foundation for long-term development and contributing to increased revenue and customer satisfaction.",
