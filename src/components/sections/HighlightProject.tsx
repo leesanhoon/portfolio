@@ -18,9 +18,29 @@ export const HighlightProject = () => {
                     <div className="relative z-10 text-left">
                         <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
                             <div>
-                                <h3 className="text-2xl md:text-4xl font-black text-white uppercase tracking-tight mb-2">
-                                    Bachhoaxanh Website Project
-                                </h3>
+                                <a
+                                    href="https://www.bachhoaxanh.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="group/link inline-block"
+                                >
+                                    <h3 className="text-2xl md:text-4xl font-black text-white uppercase tracking-tight mb-2 flex items-center gap-4 group-hover/link:text-rose-500 transition-colors">
+                                        Bachhoaxanh Website Project
+                                        <svg
+                                            className="w-8 h-8 opacity-0 -translate-y-2 translate-x-2 group-hover/link:opacity-100 group-hover/link:translate-y-0 group-hover/link:translate-x-0 transition-all duration-300"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth="2.5"
+                                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                                            />
+                                        </svg>
+                                    </h3>
+                                </a>
                                 <div className="flex items-center gap-4">
                                     <span className="text-rose-500 text-sm font-black tracking-widest uppercase">
                                         E-Commerce Specialist

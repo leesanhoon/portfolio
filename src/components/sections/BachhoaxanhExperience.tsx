@@ -16,9 +16,29 @@ export const BachhoaxanhExperience = () => {
 
             <div className="bg-[#1E293B]/50 rounded-2xl md:rounded-3xl p-6 md:p-12 border border-white/5 shadow-2xl group-hover:border-cyan-500/30 transition-all duration-500">
                 <div className="mb-10 text-left">
-                    <h3 className="text-xl md:text-3xl font-black text-[#42A5F5] tracking-tight mb-2 uppercase">
-                        Bachhoaxanh (E-Commerce)
-                    </h3>
+                    <a
+                        href="https://www.bachhoaxanh.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group/link inline-block"
+                    >
+                        <h3 className="text-xl md:text-3xl font-black text-[#42A5F5] tracking-tight mb-2 uppercase flex items-center gap-3 group-hover/link:text-cyan-400 transition-colors">
+                            Bachhoaxanh (E-Commerce)
+                            <svg
+                                className="w-6 h-6 opacity-0 -translate-y-1 translate-x-1 group-hover/link:opacity-100 group-hover/link:translate-y-0 group-hover/link:translate-x-0 transition-all duration-300"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                                />
+                            </svg>
+                        </h3>
+                    </a>
                     <p className="text-slate-400 text-xs md:text-sm font-bold mb-6">
                         Software Engineer / .Net Developer
                     </p>
