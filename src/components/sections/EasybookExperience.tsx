@@ -17,9 +17,29 @@ export const EasybookExperience = () => {
             {/* Card Body */}
             <div className="bg-[#1E293B]/50 rounded-2xl md:rounded-3xl p-6 md:p-12 border border-white/5 shadow-2xl group-hover:border-cyan-500/30 transition-all duration-500">
                 <div className="mb-8 md:mb-10 text-left">
-                    <h3 className="text-xl md:text-3xl font-black text-[#42A5F5] tracking-tight mb-2 uppercase">
-                        Easybook.com (Travel Booking System)
-                    </h3>
+                    <a
+                        href="https://www.easybook.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group/link inline-block"
+                    >
+                        <h3 className="text-xl md:text-3xl font-black text-[#42A5F5] tracking-tight mb-2 uppercase flex items-center gap-3 group-hover/link:text-cyan-400 transition-colors">
+                            Easybook.com (Travel Booking System)
+                            <svg
+                                className="w-6 h-6 opacity-0 -translate-y-1 translate-x-1 group-hover/link:opacity-100 group-hover/link:translate-y-0 group-hover/link:translate-x-0 transition-all duration-300"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                                />
+                            </svg>
+                        </h3>
+                    </a>
                     <p className="text-slate-400 text-xs md:text-sm font-bold mb-6">
                         .NET Developer | 09/2025 - Present
                     </p>
@@ -35,7 +55,9 @@ export const EasybookExperience = () => {
 
                     <div className="flex flex-wrap gap-4 mb-8 md:mb-10">
                         <a
-                            href="#"
+                            href="https://apps.apple.com/sg/app/easybook-bus-train-ferry-tour/id668514565"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="flex-1 sm:flex-none px-6 py-2.5 bg-black rounded-2xl text-sm font-bold text-white flex items-center justify-center gap-3 hover:bg-zinc-900 transition-all border border-white/10 shadow-xl"
                         >
                             <svg
@@ -48,7 +70,9 @@ export const EasybookExperience = () => {
                             App Store
                         </a>
                         <a
-                            href="#"
+                            href="https://play.google.com/store/apps/details?id=easiphone.easibookbustickets&pcampaignid=web_share"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="flex-1 sm:flex-none px-6 py-2.5 bg-white rounded-2xl text-sm font-bold text-slate-900 flex items-center justify-center gap-3 hover:bg-slate-50 transition-all shadow-xl"
                         >
                             <svg className="w-5 h-5" viewBox="0 0 24 24">
