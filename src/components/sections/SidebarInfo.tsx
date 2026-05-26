@@ -66,14 +66,17 @@ export const SidebarInfo = () => {
             {/* Achievements */}
             <section>
                 <h3 className="text-xl font-bold text-white mb-4">
-                    Achievements
+                    Key Highlights
                 </h3>
                 <ul className="space-y-4">
                     {[
-                        { icon: "🎁", title: "6+ years experience" },
-                        { icon: "📄", title: "10+ production apps" },
-                        { icon: "🛒", title: "2 POS systems built" },
-                        { icon: "🏢", title: "3 F&B system built" },
+                        {
+                            icon: "🚀",
+                            title: "High-scale Cart/Order APIs (MWG)",
+                        },
+                        { icon: "🌍", title: "Multi-national Travel Systems" },
+                        { icon: "🔄", title: "SOAP to REST Modernization" },
+                        { icon: "⚡", title: "Query & API Performance Tuning" },
                     ].map((item, i) => (
                         <li
                             key={i}
