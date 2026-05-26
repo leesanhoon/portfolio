@@ -257,13 +257,23 @@ export default function Home() {
 
                             {/* Card Body */}
                             <div className="bg-[#1E293B]/50 rounded-2xl md:rounded-3xl p-6 md:p-12 border border-white/5 shadow-2xl group-hover:border-cyan-500/30 transition-all duration-500">
-                                <div className="mb-8 md:mb-10">
+                                <div className="mb-8 md:mb-10 text-left">
                                     <h3 className="text-xl md:text-3xl font-black text-[#42A5F5] tracking-tight mb-2 uppercase">
-                                        Easybook (Travel Booking System)
+                                        Easybook.com (Travel Booking System)
                                     </h3>
                                     <p className="text-slate-400 text-xs md:text-sm font-bold mb-6">
-                                        09/2025 - Present
+                                        .NET Developer | 09/2025 - Present
                                     </p>
+
+                                    <div className="mb-8 p-5 bg-cyan-500/5 border-l-4 border-cyan-500 rounded-r-2xl">
+                                        <p className="text-slate-300 text-sm italic leading-relaxed">
+                                            "Easybook is a leading land and sea
+                                            travel booking platform in Southeast
+                                            Asia, providing ticketing solutions
+                                            for buses, ferries, trains, and car
+                                            rentals across multiple countries."
+                                        </p>
+                                    </div>
 
                                     <div className="flex flex-wrap gap-4 mb-8 md:mb-10">
                                         <a
@@ -307,75 +317,43 @@ export default function Home() {
                                             Google Play
                                         </a>
                                     </div>
-
-                                    {/* Screenshots Row */}
-                                    <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide mb-12">
-                                        {[1, 2, 3, 4].map((i) => (
-                                            <div
-                                                key={i}
-                                                className="w-48 h-32 md:w-64 md:h-44 rounded-2xl bg-slate-800/80 border border-white/10 flex-shrink-0 flex items-center justify-center relative group/img overflow-hidden shadow-2xl"
-                                            >
-                                                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-transparent"></div>
-                                                <span className="text-[10px] font-black text-slate-600 uppercase tracking-widest">
-                                                    Screenshot {i}
-                                                </span>
-                                            </div>
-                                        ))}
-                                    </div>
                                 </div>
 
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 mb-16 text-left">
                                     <div className="space-y-12">
-                                        {/* Applications */}
+                                        {/* Core Responsibilities */}
                                         <section>
                                             <h4 className="text-sm font-black text-white uppercase tracking-wider mb-6 flex items-center gap-3">
                                                 <span className="text-xl">
-                                                    🗳️
+                                                    🛠️
                                                 </span>{" "}
-                                                Applications
+                                                Core Responsibilities
                                             </h4>
-                                            <ul className="space-y-3">
+                                            <ul className="space-y-5">
                                                 {[
-                                                    "POS System (Tablet / Counter)",
-                                                    "Server App (Waiter Ordering)",
-                                                    "Kitchen Display System (KDS)",
-                                                    "Admin Dashboard",
+                                                    {
+                                                        title: "System Development",
+                                                        desc: "Participated in developing and optimizing web applications and RESTful APIs using .NET Core and C#.",
+                                                    },
+                                                    {
+                                                        title: "Database Operations",
+                                                        desc: "Worked with SQL Server; wrote stored procedures and views; assisted in query tuning and index optimization.",
+                                                    },
+                                                    {
+                                                        title: "System Integration",
+                                                        desc: "Contributed to migrating legacy services from SOAP to lightweight RESTful APIs for better response times.",
+                                                    },
                                                 ].map((item, i) => (
                                                     <li
                                                         key={i}
-                                                        className="flex items-center gap-3 text-sm font-bold text-slate-300"
+                                                        className="space-y-1"
                                                     >
-                                                        <span className="w-1.5 h-1.5 bg-[#42A5F5] rounded-full"></span>
-                                                        {item}
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </section>
-
-                                        {/* What I Built */}
-                                        <section>
-                                            <h4 className="text-sm font-black text-white uppercase tracking-wider mb-6 flex items-center gap-3">
-                                                <span className="text-xl">
-                                                    🚀
-                                                </span>{" "}
-                                                What I Built
-                                            </h4>
-                                            <ul className="space-y-4">
-                                                {[
-                                                    "Built code base for POS, Server, and Kitchen systems.",
-                                                    "Designed modular printing service supporting: Epson, Sunmi, Zebra.",
-                                                    "Built multi-kitchen routing logic.",
-                                                    "Implemented real-time order sync using socket.io.",
-                                                    "Integrated payment gateways: Sunmi & Dejavoo.",
-                                                ].map((task, i) => (
-                                                    <li
-                                                        key={i}
-                                                        className="flex gap-3 text-sm leading-relaxed font-bold text-slate-400"
-                                                    >
-                                                        <span className="text-[#E91E63] text-lg leading-none">
-                                                            •
+                                                        <span className="block text-sm font-bold text-slate-200">
+                                                            {item.title}
                                                         </span>
-                                                        {task}
+                                                        <span className="block text-xs text-slate-400 font-medium leading-relaxed">
+                                                            {item.desc}
+                                                        </span>
                                                     </li>
                                                 ))}
                                             </ul>
@@ -383,245 +361,180 @@ export default function Home() {
                                     </div>
 
                                     <div className="space-y-12">
-                                        {/* Users */}
+                                        {/* Key Achievements */}
                                         <section>
                                             <h4 className="text-sm font-black text-white uppercase tracking-wider mb-6 flex items-center gap-3">
                                                 <span className="text-xl">
-                                                    👥
+                                                    🏆
                                                 </span>{" "}
-                                                Users
+                                                Key Achievements
                                             </h4>
-                                            <ul className="space-y-3 text-sm font-bold text-slate-300">
+                                            <div className="space-y-4">
                                                 {[
-                                                    "F&B restaurant owners",
-                                                    "Cashiers (POS)",
-                                                    "Waiters (Server app)",
-                                                    "Kitchen staff (KDS)",
-                                                    "Multi-branch restaurant chains",
-                                                ].map((item, i) => (
-                                                    <li
-                                                        key={i}
-                                                        className="flex items-center gap-3"
-                                                    >
-                                                        <span className="w-1.5 h-1.5 bg-[#42A5F5] rounded-full"></span>
-                                                        {item}
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </section>
-
-                                        {/* Status */}
-                                        <section>
-                                            <div className="p-8 bg-[#E3F2FD]/5 rounded-2xl border border-white/5 space-y-3">
-                                                {[
-                                                    "In active development",
-                                                    "Internal QA testing",
-                                                    "Production deployment planned",
-                                                ].map((item, i) => (
+                                                    "Successfully migrated communication layer from legacy SOAP to REST APIs for assigned modules.",
+                                                    "Optimized SQL Server queries for the booking module, improving stability during high-traffic hours.",
+                                                    "Resolved production bugs and ensured compliance with business logic requirements.",
+                                                ].map((text, i) => (
                                                     <div
                                                         key={i}
-                                                        className="flex items-center gap-3 text-sm font-bold text-cyan-400/50"
+                                                        className="p-4 bg-cyan-500/5 rounded-2xl border border-cyan-500/10 flex gap-3 items-start"
                                                     >
-                                                        <span className="text-cyan-400">
+                                                        <span className="text-cyan-400 text-lg font-bold">
                                                             ✓
                                                         </span>
-                                                        {item}
+                                                        <p className="text-sm font-bold text-slate-300 leading-snug">
+                                                            {text}
+                                                        </p>
                                                     </div>
                                                 ))}
                                             </div>
                                         </section>
-
-                                        {/* Team */}
-                                        <section>
-                                            <h4 className="text-sm font-black text-white uppercase tracking-wider mb-6 flex items-center gap-3">
-                                                <span className="text-xl">
-                                                    👨‍💼
-                                                </span>{" "}
-                                                Team
-                                            </h4>
-                                            <ul className="space-y-3 text-sm font-bold text-slate-300">
-                                                {[
-                                                    "3 Mobile Developer",
-                                                    "2 Web Developers",
-                                                    "4 Backend Developer",
-                                                    "3 QA",
-                                                    "1 Designer",
-                                                    "1 BA",
-                                                ].map((item, i) => (
-                                                    <li
-                                                        key={i}
-                                                        className="flex items-center gap-3"
-                                                    >
-                                                        <span className="w-1.5 h-1.5 bg-[#42A5F5] rounded-full"></span>
-                                                        {item}
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </section>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
 
-                        {/* Experience Card 2: MWG */}
-                        <div className="relative mb-20 group">
-                            <div className="absolute -left-[35px] md:-left-[67px] top-6 w-6 h-6 rounded-full bg-[#0B1120] border-4 border-slate-700 flex items-center justify-center group-hover:border-cyan-500 transition-colors z-10">
-                                <div className="w-1.5 h-1.5 bg-slate-700 group-hover:bg-white rounded-full transition-colors"></div>
-                            </div>
-
-                            <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                                <span className="text-xs font-black text-slate-500/60 tracking-[0.3em] bg-slate-500/5 px-4 py-2 rounded-xl mb-4 md:mb-0 group-hover:text-cyan-400/60 group-hover:bg-cyan-500/5 transition-all">
-                                    01/2024 - 08/2025
-                                </span>
-                            </div>
-
-                            <div className="bg-[#1E293B]/50 rounded-3xl p-8 md:p-12 border border-white/5 opacity-80 hover:opacity-100 transition-all duration-500 shadow-xl group-hover:border-cyan-500/20">
-                                <div className="mb-10">
-                                    <h3 className="text-2xl md:text-3xl font-black text-[#42A5F5] uppercase tracking-tight mb-2">
-                                        MWG (E-Commerce)
-                                    </h3>
-                                    <p className="text-slate-400 text-sm font-bold">
-                                        Software Engineer
-                                    </p>
-                                </div>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
-                                    <div className="space-y-6">
-                                        <h4 className="text-sm font-black text-white uppercase tracking-wider mb-6 flex items-center gap-3">
-                                            <span className="text-xl">🚀</span>{" "}
-                                            Main Contributions
-                                        </h4>
-                                        <ul className="space-y-4">
-                                            {[
-                                                "Unified shopping cart API development.",
-                                                "Integrated multi-brand platforms.",
-                                                "High-traffic platform optimization.",
-                                            ].map((text, i) => (
-                                                <li
-                                                    key={i}
-                                                    className="flex gap-3 text-sm font-bold text-slate-400"
-                                                >
-                                                    <span className="text-[#E91E63] text-lg leading-none">
-                                                        •
-                                                    </span>
-                                                    {text}
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                    <div className="flex items-center justify-center p-8 bg-slate-900/50 rounded-2xl border border-white/5">
-                                        <div className="text-center">
-                                            <p className="text-4xl font-black text-white mb-1 tracking-tighter">
-                                                1M+
-                                            </p>
-                                            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">
-                                                Daily Sessions
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Experience Card 3: Bachhoaxanh */}
-                        <div className="relative group">
-                            <div className="absolute -left-[27px] md:-left-[67px] top-6 w-6 h-6 rounded-full bg-[#0B1120] border-4 border-slate-700 flex items-center justify-center group-hover:border-cyan-500 transition-colors z-10">
-                                <div className="w-1.5 h-1.5 bg-slate-700 group-hover:bg-white rounded-full transition-colors"></div>
-                            </div>
-
-                            <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                                <span className="text-xs font-black text-slate-500/60 tracking-[0.3em] bg-slate-500/5 px-4 py-2 rounded-xl mb-4 md:mb-0 group-hover:text-cyan-400/60 group-hover:bg-cyan-500/5 transition-all">
-                                    05/2020 - 12/2023
-                                </span>
-                            </div>
-
-                            <div className="bg-[#1E293B]/50 rounded-3xl p-8 md:p-12 border border-white/5 opacity-80 hover:opacity-100 transition-all duration-500 shadow-xl group-hover:border-cyan-500/20">
-                                <div className="mb-10">
-                                    <h3 className="text-2xl md:text-3xl font-black text-[#42A5F5] uppercase tracking-tight mb-2">
-                                        Bachhoaxanh (.NET Migration)
-                                    </h3>
-                                    <p className="text-slate-400 text-sm font-bold">
-                                        .NET Developer
-                                    </p>
-                                </div>
-                                <div className="space-y-8">
-                                    <p className="text-slate-300 text-sm leading-relaxed max-w-2xl font-bold">
-                                        Spearheaded the migration of
-                                        multi-layered legacy systems to modern
-                                        .NET Core, ensuring high availability
-                                        and seamless data transition for retail
-                                        operations.
-                                    </p>
-                                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                {/* Detailed Projects */}
+                                <section className="text-left">
+                                    <h4 className="text-sm font-black text-white uppercase tracking-wider mb-8 flex items-center gap-3">
+                                        <span className="text-xl">🚀</span>{" "}
+                                        Featured Projects
+                                    </h4>
+                                    <div className="grid grid-cols-1 gap-6">
                                         {[
                                             {
-                                                label: "Performance",
-                                                val: "400%",
+                                                id: 1,
+                                                title: "Kymtrans API Integration",
+                                                desc: "Support real-time seat searching, mapping, and automated booking with a background sync pipeline.",
+                                                tags: [
+                                                    ".NET Core",
+                                                    "SQL Server",
+                                                    "Web API",
+                                                    "Scheduler",
+                                                ],
+                                                bullets: [
+                                                    "Developed automated Scheduler service for ticketing data sync.",
+                                                    "Built backend logic for dynamic interactive seat layout rendering.",
+                                                    "Implemented booking constraints ensuring zero seat allocation discrepancies.",
+                                                ],
                                             },
                                             {
-                                                label: "Migrated Services",
-                                                val: "15+",
+                                                id: 2,
+                                                title: "BRF System Modernization",
+                                                desc: "Transitioning legacy integration for Britain Resort Ferry (BRF) to a modern REST platform.",
+                                                tags: [
+                                                    ".NET Core",
+                                                    "C#",
+                                                    "RESTful APIs",
+                                                    "SOAP Migration",
+                                                ],
+                                                bullets: [
+                                                    "Executed communication layer migration from legacy SOAP APIs.",
+                                                    "Refactored data models and eliminated slow-running code segments.",
+                                                    "Improved API response times for a more stable ferry booking experience.",
+                                                ],
                                             },
                                             {
-                                                label: "Code Coverage",
-                                                val: "85%",
+                                                id: 3,
+                                                title: "RedBus Intelligence Location Mapping",
+                                                desc: "Map and analyze location data between competitors to identify missing routes and gaps.",
+                                                tags: [
+                                                    "Advanced SQL",
+                                                    "Indexing",
+                                                    "Data Comparison",
+                                                ],
+                                                bullets: [
+                                                    "Developed data ingestion module to align location datasets with RedBus.",
+                                                    "Built processing logic to filter potential trip gaps and unlinked partners.",
+                                                    "Generated automated reports to support data-driven expansion decisions.",
+                                                ],
                                             },
-                                            { label: "Latency", val: "-60%" },
-                                        ].map((stat, i) => (
+                                        ].map((project) => (
                                             <div
-                                                key={i}
-                                                className="p-4 bg-slate-800/30 rounded-xl border border-white/5 text-center"
+                                                key={project.id}
+                                                className="p-6 md:p-8 bg-[#0B1120]/40 rounded-3xl border border-white/5 hover:border-cyan-500/20 transition-all duration-300"
                                             >
-                                                <p className="text-xl font-black text-white mb-1 tracking-tight">
-                                                    {stat.val}
-                                                </p>
-                                                <p className="text-[10px] font-black text-slate-500 uppercase">
-                                                    {stat.label}
-                                                </p>
+                                                <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+                                                    <div>
+                                                        <h5 className="text-lg font-black text-white mb-1">
+                                                            {project.id}.{" "}
+                                                            {project.title}
+                                                        </h5>
+                                                        <p className="text-slate-400 text-xs font-medium">
+                                                            {project.desc}
+                                                        </p>
+                                                    </div>
+                                                    <div className="flex flex-wrap gap-2">
+                                                        {project.tags.map(
+                                                            (tag) => (
+                                                                <span
+                                                                    key={tag}
+                                                                    className="px-2.5 py-1 bg-slate-800 text-[10px] font-black text-slate-500 rounded-lg uppercase"
+                                                                >
+                                                                    {tag}
+                                                                </span>
+                                                            ),
+                                                        )}
+                                                    </div>
+                                                </div>
+                                                <ul className="space-y-3">
+                                                    {project.bullets.map(
+                                                        (bullet, i) => (
+                                                            <li
+                                                                key={i}
+                                                                className="flex gap-3 text-xs md:text-sm font-bold text-slate-400 group/bullet"
+                                                            >
+                                                                <span className="text-cyan-500 opacity-50">
+                                                                    ●
+                                                                </span>
+                                                                {bullet}
+                                                            </li>
+                                                        ),
+                                                    )}
+                                                </ul>
                                             </div>
                                         ))}
                                     </div>
-                                </div>
+                                </section>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    {/* Side Projects Section */}
-                    <div className="mt-24">
-                        <div className="flex items-center gap-6 mb-16 underline-offset-8 decoration-emerald-500/30">
-                            <h2 className="text-4xl font-black text-emerald-400 tracking-tighter uppercase flex items-center gap-4">
-                                SIDE PROJECTS
-                                <div className="w-12 h-1 bg-emerald-400 rounded-full"></div>
-                            </h2>
-                        </div>
+                {/* Side Projects Section */}
+                <div className="mt-24">
+                    <div className="flex items-center gap-6 mb-16 underline-offset-8 decoration-emerald-500/30">
+                        <h2 className="text-4xl font-black text-emerald-400 tracking-tighter uppercase flex items-center gap-4">
+                            SIDE PROJECTS
+                            <div className="w-12 h-1 bg-emerald-400 rounded-full"></div>
+                        </h2>
+                    </div>
 
-                        <div className="relative pl-8 md:pl-16">
-                            <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-emerald-500/30 rounded-full"></div>
+                    <div className="relative pl-8 md:pl-16">
+                        <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-emerald-500/30 rounded-full"></div>
 
-                            {/* Project Item */}
-                            <div className="relative group">
-                                <div className="absolute -left-[35px] md:-left-[67px] top-6 w-6 h-6 rounded-full bg-[#0B1120] border-4 border-emerald-500 flex items-center justify-center shadow-[0_0_15px_rgba(16,185,129,0.3)] z-10">
-                                    <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
-                                </div>
-                                <div className="bg-[#1E293B] rounded-3xl p-8 md:p-10 border border-white/5 group-hover:border-emerald-500/30 transition-all duration-500">
-                                    <h3 className="text-xl font-black text-white uppercase tracking-tight mb-4">
-                                        E-Commerce Portfolio API
-                                    </h3>
-                                    <p className="text-slate-400 text-sm leading-relaxed mb-6 font-medium">
-                                        Open-source boilerplate for scalable
-                                        e-commerce backends using ASP.NET Core,
-                                        Redis, and PostgreSQL.
-                                    </p>
-                                    <div className="flex gap-2">
-                                        <span className="px-3 py-1 bg-slate-800 text-slate-500 text-[10px] font-black uppercase rounded-lg">
-                                            # .NET 8
-                                        </span>
-                                        <span className="px-3 py-1 bg-slate-800 text-slate-500 text-[10px] font-black uppercase rounded-lg">
-                                            # Docker
-                                        </span>
-                                        <span className="px-3 py-1 bg-slate-800 text-slate-500 text-[10px] font-black uppercase rounded-lg">
-                                            # Redis
-                                        </span>
-                                    </div>
+                        {/* Project Item */}
+                        <div className="relative group">
+                            <div className="absolute -left-[35px] md:-left-[67px] top-6 w-6 h-6 rounded-full bg-[#0B1120] border-4 border-emerald-500 flex items-center justify-center shadow-[0_0_15px_rgba(16,185,129,0.3)] z-10">
+                                <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
+                            </div>
+                            <div className="bg-[#1E293B] rounded-3xl p-8 md:p-10 border border-white/5 group-hover:border-emerald-500/30 transition-all duration-500">
+                                <h3 className="text-xl font-black text-white uppercase tracking-tight mb-4">
+                                    E-Commerce Portfolio API
+                                </h3>
+                                <p className="text-slate-400 text-sm leading-relaxed mb-6 font-medium">
+                                    Open-source boilerplate for scalable
+                                    e-commerce backends using ASP.NET Core,
+                                    Redis, and PostgreSQL.
+                                </p>
+                                <div className="flex gap-2">
+                                    <span className="px-3 py-1 bg-slate-800 text-slate-500 text-[10px] font-black uppercase rounded-lg">
+                                        # .NET 8
+                                    </span>
+                                    <span className="px-3 py-1 bg-slate-800 text-slate-500 text-[10px] font-black uppercase rounded-lg">
+                                        # Docker
+                                    </span>
+                                    <span className="px-3 py-1 bg-slate-800 text-slate-500 text-[10px] font-black uppercase rounded-lg">
+                                        # Redis
+                                    </span>
                                 </div>
                             </div>
                         </div>
