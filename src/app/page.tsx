@@ -2,9 +2,9 @@
 
 export default function Home() {
     return (
-        <div className="min-h-screen bg-[#0B1120] text-slate-300 flex font-sans selection:bg-cyan-500/30">
+        <div className="min-h-screen bg-[#0B1120] text-slate-300 flex flex-col lg:flex-row font-sans selection:bg-cyan-500/30">
             {/* Left Sidebar */}
-            <div className="w-[340px] bg-[#111827] border-r border-slate-800/50 h-screen overflow-y-auto sticky top-0 scrollbar-hide p-10 flex flex-col">
+            <div className="w-full lg:w-[340px] bg-[#111827] border-b lg:border-b-0 lg:border-r border-slate-800/50 lg:h-screen overflow-y-auto lg:sticky lg:top-0 scrollbar-hide p-6 lg:p-10 flex flex-col">
                 {/* Profile Section */}
                 <div className="flex flex-col items-center text-center mb-10">
                     <div className="mb-6">
@@ -227,25 +227,25 @@ export default function Home() {
             </div>
 
             {/* Right Content Area */}
-            <div className="flex-1 p-16 overflow-y-auto scroll-smooth">
+            <div className="flex-1 p-6 md:p-12 lg:p-16 overflow-y-auto scroll-smooth">
                 <div className="max-w-5xl mx-auto">
                     {/* Header Section */}
-                    <div className="flex items-center gap-6 mb-16">
-                        <h2 className="text-4xl font-black text-cyan-400 tracking-tighter uppercase flex items-center gap-4">
+                    <div className="flex items-center gap-6 mb-12 lg:mb-16">
+                        <h2 className="text-3xl md:text-4xl font-black text-cyan-400 tracking-tighter uppercase flex items-center gap-4">
                             EXPERIENCES
                             <div className="w-12 h-1 bg-cyan-400 rounded-full"></div>
                         </h2>
                     </div>
 
                     {/* Timeline Container */}
-                    <div className="relative pl-8 md:pl-16">
+                    <div className="relative pl-6 md:pl-16">
                         {/* Main Timeline Line */}
                         <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-cyan-500/30 rounded-full"></div>
 
                         {/* Experience Card 1: Easybook */}
-                        <div className="relative mb-20 group">
+                        <div className="relative mb-16 lg:mb-20 group">
                             {/* Marker */}
-                            <div className="absolute -left-[35px] md:-left-[67px] top-6 w-6 h-6 rounded-full bg-[#0B1120] border-4 border-cyan-500 flex items-center justify-center shadow-[0_0_15px_rgba(34,211,238,0.4)] z-10">
+                            <div className="absolute -left-[27px] md:-left-[67px] top-6 w-6 h-6 rounded-full bg-[#0B1120] border-4 border-cyan-500 flex items-center justify-center shadow-[0_0_15px_rgba(34,211,238,0.4)] z-10">
                                 <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
                             </div>
 
@@ -256,22 +256,26 @@ export default function Home() {
                             </div>
 
                             {/* Card Body */}
-                            <div className="bg-[#1E293B]/50 rounded-3xl p-8 md:p-12 border border-white/5 shadow-2xl group-hover:border-cyan-500/30 transition-all duration-500">
-                                <div className="mb-10">
-                                    <h3 className="text-2xl md:text-3xl font-black text-[#42A5F5] tracking-tight mb-2 uppercase">
+                            <div className="bg-[#1E293B]/50 rounded-2xl md:rounded-3xl p-6 md:p-12 border border-white/5 shadow-2xl group-hover:border-cyan-500/30 transition-all duration-500">
+                                <div className="mb-8 md:mb-10">
+                                    <h3 className="text-xl md:text-3xl font-black text-[#42A5F5] tracking-tight mb-2 uppercase">
                                         Easybook (Travel Booking System)
                                     </h3>
-                                    <p className="text-slate-400 text-sm font-bold mb-6">
+                                    <p className="text-slate-400 text-xs md:text-sm font-bold mb-6">
                                         09/2025 - Present
                                     </p>
 
-                                    <div className="flex gap-3 mb-10">
-                                        <button className="px-6 py-2.5 bg-black rounded-lg text-xs font-black text-white uppercase flex items-center gap-2 hover:bg-black/80 transition-colors border border-white/10">
-                                            <span className="text-lg">🍎</span>{" "}
+                                    <div className="flex flex-wrap gap-3 mb-8 md:mb-10">
+                                        <button className="flex-1 sm:flex-none px-4 md:px-6 py-2 md:py-2.5 bg-black rounded-lg text-[10px] md:text-xs font-black text-white uppercase flex items-center justify-center gap-2 hover:bg-black/80 transition-colors border border-white/10">
+                                            <span className="text-base md:text-lg">
+                                                🍎
+                                            </span>{" "}
                                             App Store
                                         </button>
-                                        <button className="px-6 py-2.5 bg-white rounded-lg text-xs font-black text-slate-900 uppercase flex items-center gap-2 hover:bg-slate-100 transition-colors shadow-lg">
-                                            <span className="text-lg">▶️</span>{" "}
+                                        <button className="flex-1 sm:flex-none px-4 md:px-6 py-2 md:py-2.5 bg-white rounded-lg text-[10px] md:text-xs font-black text-slate-900 uppercase flex items-center justify-center gap-2 hover:bg-slate-100 transition-colors shadow-lg">
+                                            <span className="text-base md:text-lg">
+                                                ▶️
+                                            </span>{" "}
                                             Google Play
                                         </button>
                                     </div>
@@ -492,7 +496,7 @@ export default function Home() {
 
                         {/* Experience Card 3: Bachhoaxanh */}
                         <div className="relative group">
-                            <div className="absolute -left-[35px] md:-left-[67px] top-6 w-6 h-6 rounded-full bg-[#0B1120] border-4 border-slate-700 flex items-center justify-center group-hover:border-cyan-500 transition-colors z-10">
+                            <div className="absolute -left-[27px] md:-left-[67px] top-6 w-6 h-6 rounded-full bg-[#0B1120] border-4 border-slate-700 flex items-center justify-center group-hover:border-cyan-500 transition-colors z-10">
                                 <div className="w-1.5 h-1.5 bg-slate-700 group-hover:bg-white rounded-full transition-colors"></div>
                             </div>
 
