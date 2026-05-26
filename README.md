@@ -34,3 +34,40 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## MongoDB Backend Integration
+
+This project now includes a backend API (App Router Route Handler) connected to MongoDB via Mongoose.
+
+### 1) Configure environment variables
+
+Create a `.env.local` file in the project root and copy values from `.env.example`:
+
+```bash
+MONGODB_URI=mongodb+srv://<username>:<password>@<cluster-url>/?retryWrites=true&w=majority
+MONGODB_DB=portfolio
+```
+
+### 2) API endpoint
+
+- `POST /api/contact`: Save a contact message
+- `GET /api/contact`: Fetch latest 20 messages (newest first)
+
+Sample `POST` body:
+
+```json
+{
+	"name": "Your Name",
+	"email": "your@email.com",
+	"message": "Hello from portfolio"
+}
+```
+
+### 3) Quick test with curl
+
+```bash
+curl -X POST http://localhost:3000/api/contact \\
+	-H "Content-Type: application/json" \\
+	-d '{"name":"Test User","email":"test@example.com","message":"Hello"}'
+```
+
