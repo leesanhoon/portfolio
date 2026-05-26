@@ -4,10 +4,17 @@ export const ProfileSection = () => {
     return (
         <div className="flex flex-col items-center text-center mb-10">
             <div className="mb-6">
-                <div className="w-28 h-28 rounded-full border-[3px] border-white/10 overflow-hidden shadow-2xl">
-                    <div className="w-full h-full bg-slate-800 flex items-center justify-center text-slate-500 font-bold uppercase text-[10px]">
-                        Photo
-                    </div>
+                <div className="w-28 h-28 rounded-full border-[3px] border-white/10 overflow-hidden shadow-2xl relative group/avatar">
+                    <img
+                        src="/1758714776206.jpg"
+                        alt="Nguyễn Tấn Ninh"
+                        className="w-full h-full object-cover transition-all duration-500 scale-110 group-hover/avatar:scale-100"
+                        onError={(e) => {
+                            e.currentTarget.src =
+                                "https://ui-avatars.com/api/?name=Nguyen+Tan+Ninh&background=0B1120&color=42A5F5&size=512&bold=true";
+                        }}
+                    />
+                    <div className="absolute inset-0 bg-cyan-500/5 group-hover/avatar:bg-transparent transition-colors"></div>
                 </div>
             </div>
 
@@ -56,7 +63,9 @@ export const ProfileSection = () => {
                     </svg>
                 </a>
                 <a
-                    href="https://linkedin.com/in/leesanhoon/"
+                    href="https://linkedin.com/in/nguyentanninh"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-11 h-11 rounded-xl bg-[#007AC1] flex items-center justify-center hover:scale-110 hover:shadow-[0_0_20px_rgba(0,122,193,0.3)] transition-all duration-300"
                     title="LinkedIn Profile"
                 >
@@ -66,6 +75,21 @@ export const ProfileSection = () => {
                         viewBox="0 0 24 24"
                     >
                         <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                </a>
+                <a
+                    href="https://www.facebook.com/leesanhoonn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-11 h-11 rounded-xl bg-[#1877F2] flex items-center justify-center hover:scale-110 hover:shadow-[0_0_20px_rgba(24,119,242,0.3)] transition-all duration-300"
+                    title="Facebook Profile"
+                >
+                    <svg
+                        className="w-6 h-6 text-white"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                     </svg>
                 </a>
             </div>
