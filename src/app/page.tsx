@@ -5,7 +5,7 @@ import { SidebarInfo } from "@/components/sections/SidebarInfo";
 import { EasybookExperience } from "@/components/sections/EasybookExperience";
 import { MWGExperience } from "@/components/sections/MWGExperience";
 import { BachhoaxanhExperience } from "@/components/sections/BachhoaxanhExperience";
-import { ProjectsSection } from "@/components/sections/ProjectsSection";
+import { AwardsSection } from "@/components/sections/AwardsSection";
 
 export default function Home() {
     return (
@@ -36,8 +36,8 @@ export default function Home() {
                         <BachhoaxanhExperience />
                     </div>
 
-                    {/* Side Projects Section */}
-                    <ProjectsSection />
+                    {/* Awards Section */}
+                    <AwardsSection />
                 </div>
             </div>
         </div>
