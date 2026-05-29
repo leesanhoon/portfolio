@@ -1,6 +1,21 @@
 import React from "react";
+import Link from "next/link";
 
 export const SidebarInfo = () => {
+    const favorites = [
+        { label: "PUBG", href: "/pubg/train/mortar", external: false },
+        {
+            label: "Traveling",
+            href: "https://www.lonelyplanet.com/",
+            external: true,
+        },
+        {
+            label: "Swimming",
+            href: "https://en.wikipedia.org/wiki/Swimming_(sport)",
+            external: true,
+        },
+    ];
+
     return (
         <div className="space-y-10 px-2 mt-4 text-left">
             {/* About Me */}
@@ -116,6 +131,41 @@ export const SidebarInfo = () => {
                             Van Lang University (VLU)
                         </p>
                     </div>
+                </div>
+            </section>
+
+            {/* Favorites */}
+            <section>
+                <h3 className="text-xl font-bold text-white mb-4">Favorites</h3>
+                <div className="flex flex-wrap gap-2">
+                    {favorites.map((favorite) => {
+                        const chipClassName =
+                            "inline-block px-3 py-1.5 bg-[#1E293B] border border-white/5 text-xs text-slate-300 font-bold rounded-lg transition-colors hover:text-cyan-400 hover:border-cyan-400/30";
+
+                        if (favorite.external) {
+                            return (
+                                <a
+                                    key={favorite.label}
+                                    href={favorite.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={chipClassName}
+                                >
+                                    {favorite.label}
+                                </a>
+                            );
+                        }
+
+                        return (
+                            <Link
+                                key={favorite.label}
+                                href={favorite.href}
+                                className={chipClassName}
+                            >
+                                {favorite.label}
+                            </Link>
+                        );
+                    })}
                 </div>
             </section>
 

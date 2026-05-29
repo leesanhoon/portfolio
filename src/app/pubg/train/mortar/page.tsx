@@ -1,6 +1,7 @@
 ﻿"use client";
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import MapGrid from "@/components/pubg/MapGrid";
 import { generateValidChallenge, calculateDistance } from "./pubgUtils";
 
@@ -48,6 +49,13 @@ export default function MortarTrainingPage() {
                 {/* Left Side: Map */}
                 <div className="flex-1 bg-white p-4 md:p-6 rounded-2xl shadow-xl border border-gray-200">
                     <div className="mb-4 flex flex-wrap gap-4 items-center justify-between">
+                        <Link
+                            href="/"
+                            className="inline-flex items-center gap-2 text-sm font-semibold text-blue-700 hover:text-blue-800 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg px-3 py-2 transition-colors"
+                        >
+                            <span aria-hidden="true">←</span>
+                            Back Home
+                        </Link>
                         <div>
                             <h1 className="text-2xl font-extrabold text-gray-800 tracking-tight">
                                 PUBG Mortar Training
