@@ -6,13 +6,13 @@ export const SidebarInfo = () => {
         { label: "PUBG", href: "/pubg/train/mortar", external: false },
         {
             label: "Traveling",
-            href: "https://www.lonelyplanet.com/",
-            external: true,
+            href: "/",
+            external: false,
         },
         {
             label: "Swimming",
-            href: "https://en.wikipedia.org/wiki/Swimming_(sport)",
-            external: true,
+            href: "/",
+            external: false,
         },
     ];
 
