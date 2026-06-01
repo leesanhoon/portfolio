@@ -63,6 +63,10 @@ export const SidebarInfo = () => {
                         "SQL Server",
                         "Microservices Architecture",
                         "RESTful APIs",
+                        "GitHub Copilot / Codex",
+                        "Claude Code / Claude Sonnet",
+                        "NotebookLM for Documentation",
+                        "AI-assisted Migration Planning",
                         "Docker / CI/CD",
                         "Git",
                         "ReactJS / Next.js / Nest.js",
@@ -92,6 +96,10 @@ export const SidebarInfo = () => {
                         { icon: "🌍", title: "Multi-national Travel Systems" },
                         { icon: "🔄", title: "SOAP to REST Modernization" },
                         { icon: "⚡", title: "Query & API Performance Tuning" },
+                        {
+                            icon: "🤖",
+                            title: "AI-assisted Documentation & Migration Planning",
+                        },
                     ].map((item, i) => (
                         <li
                             key={i}
