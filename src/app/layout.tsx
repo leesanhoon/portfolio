@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Nguyễn Tấn Ninh - .NET Developer Portfolio",
+    title: "Nguyen Tan Ninh - .NET Developer Portfolio",
     description: ".NET Developer Portfolio",
     icons: {
         icon: "/favicon.svg",
@@ -29,6 +29,7 @@ export default function RootLayout({
         <html
             lang="en"
             className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+            suppressHydrationWarning
         >
             <body className="min-h-full flex flex-col" suppressHydrationWarning>
                 {children}

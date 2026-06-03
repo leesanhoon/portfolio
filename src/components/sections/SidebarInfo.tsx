@@ -1,154 +1,119 @@
 import React from "react";
 import Link from "next/link";
 
-export const SidebarInfo = () => {
-    const favorites = [
-        { label: "PUBG", href: "/pubg/train/mortar", external: false },
-        {
-            label: "Traveling",
-            href: "/",
-            external: false,
-        },
-        {
-            label: "Swimming",
-            href: "/",
-            external: false,
-        },
-    ];
+const skillGroups = [
+    {
+        title: "Backend",
+        skills: [".NET", "C#", "ASP.NET Core Web API", "REST APIs"],
+    },
+    {
+        title: "Database",
+        skills: ["SQL Server", "Stored Procedures", "Dapper", "EF Core"],
+    },
+    {
+        title: "Frontend / Mobile",
+        skills: ["React", "Next.js", "React Native", "TailwindCSS"],
+    },
+    {
+        title: "Tools",
+        skills: ["Git", "Docker", "CI/CD", "AI coding assistants"],
+    },
+];
 
+const focusAreas = [
+    "Backend API development and maintenance",
+    "Legacy .NET migration to .NET Core",
+    "SQL query and API performance improvement",
+    "Documentation and task breakdown with AI tools",
+];
+
+const favorites = [
+    { label: "PUBG", href: "/pubg/train/mortar", external: false },
+    { label: "Traveling", href: "/", external: false },
+    { label: "Swimming", href: "/", external: false },
+];
+
+export const SidebarInfo = () => {
     return (
-        <div className="space-y-10 px-2 mt-4 text-left">
-            {/* About Me */}
+        <div className="space-y-8 px-1 mt-2 text-left">
             <section>
-                <h3 className="text-xl font-bold text-white mb-4">About Me</h3>
-                <p className="text-slate-300 text-sm leading-relaxed font-medium">
-                    <strong className="text-white">.NET Developer</strong> with{" "}
-                    <strong className="text-cyan-400">
-                        6 years of experience
-                    </strong>{" "}
-                    specializing in{" "}
-                    <strong className="text-white">backend architecture</strong>{" "}
-                    and{" "}
-                    <strong className="text-white">
-                        enterprise application development
-                    </strong>
-                    . Proven capability in executing{" "}
-                    <strong className="text-white">legacy migrations</strong>{" "}
-                    from .NET Framework to{" "}
-                    <strong className="text-cyan-400">.NET Core</strong> and
-                    optimizing{" "}
-                    <strong className="text-white">API performance</strong>.
-                    Experienced in designing{" "}
-                    <strong className="text-white">
-                        scalable RESTful services
-                    </strong>{" "}
-                    (Cart, Order, Promotion). Focused on writing{" "}
-                    <strong className="text-cyan-400">
-                        clean, maintainable code
-                    </strong>{" "}
-                    and collaborating effectively with cross-functional teams to
-                    deliver stable products
+                <h3 className="text-base font-semibold text-white mb-3">
+                    About
+                </h3>
+                <p className="text-slate-400 text-sm leading-7">
+                    .NET developer with 6 years of experience building and
+                    maintaining backend services for e-commerce and travel
+                    booking systems. I have worked on .NET Core migration, REST
+                    APIs, SQL Server, and React Native mobile features.
                 </p>
             </section>
 
-            {/* Skills */}
             <section>
-                <h3 className="text-xl font-bold text-white mb-4">Skills</h3>
-                <div className="flex flex-wrap gap-2">
-                    {[
-                        ".NET / .NET Core",
-                        "C#",
-                        "ASP.NET Core Web API",
-                        "Entity Framework Core / Dapper",
-                        "SQL Server",
-                        "Microservices Architecture",
-                        "RESTful APIs",
-                        "GitHub Copilot / Codex",
-                        "Claude Code / Claude Sonnet",
-                        "NotebookLM for Documentation",
-                        "AI-assisted Migration Planning",
-                        "Docker / CI/CD",
-                        "Git",
-                        "ReactJS / Next.js / Nest.js",
-                        "HTML / CSS / TailwindCSS",
-                    ].map((skill) => (
-                        <span
-                            key={skill}
-                            className="px-3 py-1.5 bg-[#1E293B] border border-white/5 text-xs text-slate-300 font-bold rounded-lg"
-                        >
-                            {skill}
-                        </span>
-                    ))}
-                </div>
-            </section>
-
-            {/* Achievements */}
-            <section>
-                <h3 className="text-xl font-bold text-white mb-4">
-                    Key Highlights
+                <h3 className="text-base font-semibold text-white mb-3">
+                    Focus Areas
                 </h3>
-                <ul className="space-y-4">
-                    {[
-                        {
-                            icon: "🚀",
-                            title: "High-scale Cart/Order APIs (MWG)",
-                        },
-                        { icon: "🌍", title: "Multi-national Travel Systems" },
-                        { icon: "🔄", title: "SOAP to REST Modernization" },
-                        { icon: "⚡", title: "Query & API Performance Tuning" },
-                        {
-                            icon: "🤖",
-                            title: "AI-assisted Documentation & Migration Planning",
-                        },
-                    ].map((item, i) => (
+                <ul className="space-y-2.5">
+                    {focusAreas.map((item) => (
                         <li
-                            key={i}
-                            className="flex items-center gap-3 text-slate-300 text-sm font-bold"
+                            key={item}
+                            className="text-sm text-slate-400 leading-relaxed border-l border-slate-700 pl-3"
                         >
-                            <span className="text-lg opacity-80">
-                                {item.icon}
-                            </span>
-                            {item.title}
+                            {item}
                         </li>
                     ))}
                 </ul>
             </section>
 
-            {/* Education */}
             <section>
-                <h3 className="text-xl font-bold text-white mb-4">Education</h3>
+                <h3 className="text-base font-semibold text-white mb-4">
+                    Skills
+                </h3>
                 <div className="space-y-4">
-                    <div className="space-y-1">
-                        <p className="text-slate-200 text-sm font-bold leading-snug">
-                            Software Engineering
-                        </p>
-                        <p className="text-slate-400 text-[13px] font-medium leading-relaxed">
-                            <strong className="text-cyan-400">
-                                Carnegie Mellon University (CMU)
-                            </strong>{" "}
-                            – the No.1 university in the U.S. for Computer
-                            Science and Software Engineering (U.S. News & World
-                            Report 2015-2017).
-                        </p>
-                    </div>
-                    <div className="space-y-1">
-                        <p className="text-slate-200 text-sm font-bold">
-                            Bachelor of Information Technology
-                        </p>
-                        <p className="text-slate-400 text-sm font-medium">
-                            Van Lang University (VLU)
-                        </p>
-                    </div>
+                    {skillGroups.map((group) => (
+                        <div key={group.title}>
+                            <p className="text-slate-500 text-xs font-medium mb-2">
+                                {group.title}
+                            </p>
+                            <div className="flex flex-wrap gap-2">
+                                {group.skills.map((skill) => (
+                                    <span
+                                        key={skill}
+                                        className="px-2.5 py-1 bg-[#1B2535] border border-slate-800 text-xs text-slate-300 rounded-md"
+                                    >
+                                        {skill}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </section>
 
-            {/* Favorites */}
             <section>
-                <h3 className="text-xl font-bold text-white mb-4">Favorites</h3>
+                <h3 className="text-base font-semibold text-white mb-3">
+                    Education
+                </h3>
+                <div className="rounded-xl border border-slate-800 bg-[#111827] p-4">
+                    <p className="text-slate-200 text-sm font-medium leading-6">
+                        Bachelor of Software Engineering
+                    </p>
+                    <p className="mt-1 text-cyan-300 text-xs font-medium">
+                        CMU-based Program
+                    </p>
+                    <p className="mt-3 text-slate-500 text-sm">
+                        Van Lang University
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h3 className="text-base font-semibold text-white mb-3">
+                    Favorites
+                </h3>
                 <div className="flex flex-wrap gap-2">
                     {favorites.map((favorite) => {
                         const chipClassName =
-                            "inline-block px-3 py-1.5 bg-[#1E293B] border border-white/5 text-xs text-slate-300 font-bold rounded-lg transition-colors hover:text-cyan-400 hover:border-cyan-400/30";
+                            "inline-block px-2.5 py-1 bg-[#1B2535] border border-slate-800 text-xs text-slate-400 rounded-md transition-colors hover:text-cyan-300";
 
                         if (favorite.external) {
                             return (
@@ -177,34 +142,23 @@ export const SidebarInfo = () => {
                 </div>
             </section>
 
-            {/* Contact */}
-            <section className="pb-12 text-left">
-                <h3 className="text-xl font-bold text-white mb-4">Contact</h3>
-                <div className="space-y-4 text-[13px] font-bold">
-                    <div className="flex items-center gap-2">
-                        <span className="text-slate-300 min-w-[70px]">
-                            Phone:
-                        </span>
-                        <span className="text-slate-400 font-medium">
-                            +84 966622483
-                        </span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                        <span className="text-slate-300 min-w-[70px]">
-                            Email:
-                        </span>
-                        <span className="text-cyan-400 font-medium break-all md:break-normal">
-                            nguyentanninh123@gmail.com
-                        </span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                        <span className="text-slate-300 min-w-[70px]">
-                            Location:
-                        </span>
-                        <span className="text-slate-400 font-medium whitespace-nowrap">
-                            Ho Chi Minh City
-                        </span>
-                    </div>
+            <section className="pb-10">
+                <h3 className="text-base font-semibold text-white mb-3">
+                    Contact
+                </h3>
+                <div className="space-y-3 text-sm">
+                    <p className="text-slate-400">
+                        <span className="text-slate-500">Phone: </span>
+                        +84 966622483
+                    </p>
+                    <p className="text-cyan-300 break-all">
+                        <span className="text-slate-500">Email: </span>
+                        nguyentanninh123@gmail.com
+                    </p>
+                    <p className="text-slate-400">
+                        <span className="text-slate-500">Location: </span>
+                        Ho Chi Minh City
+                    </p>
                 </div>
             </section>
         </div>

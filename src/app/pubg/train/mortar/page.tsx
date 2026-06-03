@@ -1,13 +1,12 @@
 ﻿"use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useCallback, useState } from "react";
 import Link from "next/link";
 import MapGrid from "@/components/pubg/MapGrid";
 import { generateValidChallenge, calculateDistance } from "./pubgUtils";
 
 export default function MortarTrainingPage() {
-    const [playerPos, setPlayerPos] = useState({ x: 0, y: 0 });
-    const [targetPos, setTargetPos] = useState({ x: 0, y: 0 });
+    const [challenge, setChallenge] = useState(() => generateValidChallenge());
     const [userDistance, setUserDistance] = useState("");
     const [result, setResult] = useState<{
         actualDistance: number;
@@ -15,20 +14,17 @@ export default function MortarTrainingPage() {
         difference: number;
     } | null>(null);
 
-    useEffect(() => {
-        generateNewChallenge();
-    }, []);
-
-    const generateNewChallenge = () => {
-        const { player, target } = generateValidChallenge();
-        setPlayerPos(player);
-        setTargetPos(target);
+    const generateNewChallenge = useCallback(() => {
+        setChallenge(generateValidChallenge());
         setResult(null);
         setUserDistance("");
-    };
+    }, []);
 
     const handleCheck = () => {
-        const actualDistance = calculateDistance(playerPos, targetPos);
+        const actualDistance = calculateDistance(
+            challenge.player,
+            challenge.target
+        );
         const parsedUserDistance = parseFloat(userDistance);
 
         if (isNaN(parsedUserDistance)) {
@@ -74,7 +70,10 @@ export default function MortarTrainingPage() {
                     </div>
 
                     <div className="aspect-square w-full mx-auto border-4 border-gray-800 relative bg-[#dce2d8] rounded-lg overflow-hidden shadow-inner">
-                        <MapGrid playerPos={playerPos} targetPos={targetPos} />
+                        <MapGrid
+                            playerPos={challenge.player}
+                            targetPos={challenge.target}
+                        />
                     </div>
                 </div>
 

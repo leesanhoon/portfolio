@@ -9,12 +9,12 @@ export const BachhoaxanhExperience = () => {
             </div>
 
             <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                <span className="text-xs font-black text-slate-500/60 tracking-[0.3em] bg-slate-500/5 px-4 py-2 rounded-xl mb-4 md:mb-0 group-hover:text-cyan-400/60 group-hover:bg-cyan-500/5 transition-all">
+                <span className="text-xs text-slate-500 bg-[#111827] border border-slate-800 px-3 py-1.5 rounded-md mb-4 md:mb-0">
                     05/2020 - 09/2025
                 </span>
             </div>
 
-            <div className="bg-[#1E293B]/50 rounded-2xl md:rounded-3xl p-6 md:p-12 border border-white/5 shadow-2xl group-hover:border-cyan-500/30 transition-all duration-500">
+            <div className="bg-[#111827] rounded-xl p-5 md:p-7 border border-slate-800 group-hover:border-cyan-500/30 transition-colors">
                 <div className="mb-10 text-left">
                     <a
                         href="https://www.bachhoaxanh.com"
@@ -22,7 +22,7 @@ export const BachhoaxanhExperience = () => {
                         rel="noopener noreferrer"
                         className="group/link inline-block"
                     >
-                        <h3 className="text-xl md:text-3xl font-black text-[#42A5F5] tracking-tight mb-2 uppercase flex items-center gap-3 group-hover/link:text-cyan-400 transition-colors">
+                        <h3 className="text-xl md:text-2xl font-semibold text-cyan-300 mb-2 flex items-center gap-3 group-hover/link:text-cyan-200 transition-colors">
                             Bachhoaxanh (E-Commerce)
                             <svg
                                 className="w-6 h-6 opacity-0 -translate-y-1 translate-x-1 group-hover/link:opacity-100 group-hover/link:translate-y-0 group-hover/link:translate-x-0 transition-all duration-300"
@@ -91,13 +91,13 @@ export const BachhoaxanhExperience = () => {
                 <div className="space-y-12 text-left">
                     <div className="grid grid-cols-1 gap-y-12">
                         <section>
-                            <h4 className="text-sm font-black text-white uppercase tracking-wider mb-6 flex items-center gap-3">
+                            <h4 className="text-base font-semibold text-white mb-5 flex items-center gap-3">
                                 <span className="text-xl">🛠️</span> Key
                                 Responsibilities & Achievements
                             </h4>
                             <ul className="space-y-8">
                                 <li className="space-y-4">
-                                    <span className="block text-sm font-black text-slate-200 uppercase tracking-wide border-l-2 border-cyan-500 pl-3">
+                                    <span className="block text-sm font-semibold text-slate-200 border-l border-cyan-500/70 pl-3">
                                         Website System Migration and
                                         Optimization:
                                     </span>
@@ -120,7 +120,7 @@ export const BachhoaxanhExperience = () => {
                                 </li>
 
                                 <li className="space-y-4">
-                                    <span className="block text-sm font-black text-slate-200 uppercase tracking-wide border-l-2 border-cyan-500 pl-3">
+                                    <span className="block text-sm font-semibold text-slate-200 border-l border-cyan-500/70 pl-3">
                                         System Architecture Design and Code
                                         Refactoring:
                                     </span>
@@ -144,7 +144,7 @@ export const BachhoaxanhExperience = () => {
                                 </li>
 
                                 <li className="space-y-4">
-                                    <span className="block text-sm font-black text-slate-200 uppercase tracking-wide border-l-2 border-cyan-500 pl-3">
+                                    <span className="block text-sm font-semibold text-slate-200 border-l border-cyan-500/70 pl-3">
                                         Mobile Application Development:
                                     </span>
                                     <ul className="space-y-3 pl-4">
@@ -166,7 +166,7 @@ export const BachhoaxanhExperience = () => {
                                 </li>
 
                                 <li className="space-y-4">
-                                    <span className="block text-sm font-black text-slate-200 uppercase tracking-wide border-l-2 border-cyan-500 pl-3">
+                                    <span className="block text-sm font-semibold text-slate-200 border-l border-cyan-500/70 pl-3">
                                         Collaboration & Continuous Improvement:
                                     </span>
                                     <ul className="space-y-3 pl-4">
@@ -191,7 +191,7 @@ export const BachhoaxanhExperience = () => {
                         </section>
 
                         <section>
-                            <h4 className="text-sm font-black text-white uppercase tracking-wider mb-6 flex items-center gap-3">
+                            <h4 className="text-base font-semibold text-white mb-5 flex items-center gap-3">
                                 <span className="text-xl">🏆</span> Key Results
                             </h4>
                             <div className="space-y-4">

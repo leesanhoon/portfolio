@@ -9,14 +9,14 @@ export const MWGExperience = () => {
             </div>
 
             <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                <span className="text-xs font-black text-slate-500/60 tracking-[0.3em] bg-slate-500/5 px-4 py-2 rounded-xl mb-4 md:mb-0 group-hover:text-cyan-400/60 group-hover:bg-cyan-500/5 transition-all">
+                <span className="text-xs text-slate-500 bg-[#111827] border border-slate-800 px-3 py-1.5 rounded-md mb-4 md:mb-0">
                     01/2024 - 09/2025
                 </span>
             </div>
 
-            <div className="bg-[#1E293B]/50 rounded-2xl md:rounded-3xl p-6 md:p-12 border border-white/5 shadow-2xl group-hover:border-cyan-500/30 transition-all duration-500">
+            <div className="bg-[#111827] rounded-xl p-5 md:p-7 border border-slate-800 group-hover:border-cyan-500/30 transition-colors">
                 <div className="mb-10 text-left">
-                    <h3 className="text-xl md:text-3xl font-black text-[#42A5F5] tracking-tight mb-2 uppercase">
+                    <h3 className="text-xl md:text-2xl font-semibold text-cyan-300 mb-2">
                         MWG Group E-Commerce Platform (MWG Shop)
                     </h3>
                     <p className="text-slate-400 text-xs md:text-sm font-bold mb-6">
@@ -83,7 +83,7 @@ export const MWGExperience = () => {
 
                 <div className="grid grid-cols-1 gap-y-12 text-left">
                     <div className="space-y-8">
-                        <h4 className="text-sm font-black text-white uppercase tracking-wider mb-6 flex items-center gap-3">
+                        <h4 className="text-base font-semibold text-white mb-5 flex items-center gap-3">
                             <span className="text-xl">🚀</span> Key
                             Responsibilities & Achievements
                         </h4>
