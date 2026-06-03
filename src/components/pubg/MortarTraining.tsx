@@ -1,11 +1,9 @@
-﻿"use client";
-
-import React, { useCallback, useState } from "react";
-import Link from "next/link";
+import { useCallback, useState } from "react";
+import { ArrowLeft } from "lucide-react";
 import MapGrid from "@/components/pubg/MapGrid";
-import { generateValidChallenge, calculateDistance } from "./pubgUtils";
+import { calculateDistance, generateValidChallenge } from "@/lib/pubgUtils";
 
-export default function MortarTrainingPage() {
+export default function MortarTraining() {
     const [challenge, setChallenge] = useState(() => generateValidChallenge());
     const [userDistance, setUserDistance] = useState("");
     const [result, setResult] = useState<{
@@ -27,8 +25,8 @@ export default function MortarTrainingPage() {
         );
         const parsedUserDistance = parseFloat(userDistance);
 
-        if (isNaN(parsedUserDistance)) {
-            alert("Vui lòng nhập một số hợp lệ!");
+        if (Number.isNaN(parsedUserDistance)) {
+            alert("Please enter a valid number.");
             return;
         }
 
@@ -42,28 +40,25 @@ export default function MortarTrainingPage() {
     return (
         <div className="min-h-screen bg-gray-100 p-4 md:p-8 flex items-center justify-center font-sans">
             <div className="max-w-6xl w-full flex flex-col md:flex-row gap-6">
-                {/* Left Side: Map */}
                 <div className="flex-1 bg-white p-4 md:p-6 rounded-2xl shadow-xl border border-gray-200">
                     <div className="mb-4 flex flex-wrap gap-4 items-center justify-between">
-                        <Link
+                        <a
                             href="/"
                             className="inline-flex items-center gap-2 text-sm font-semibold text-blue-700 hover:text-blue-800 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg px-3 py-2 transition-colors"
                         >
-                            <span aria-hidden="true">←</span>
+                            <ArrowLeft className="h-4 w-4" />
                             Back Home
-                        </Link>
-                        <div>
-                            <h1 className="text-2xl font-extrabold text-gray-800 tracking-tight">
-                                PUBG Mortar Training
-                            </h1>
-                        </div>
+                        </a>
+                        <h1 className="text-2xl font-extrabold text-gray-800 tracking-tight">
+                            PUBG Mortar Training
+                        </h1>
                         <div className="flex gap-4 text-xs font-bold uppercase text-gray-600 bg-gray-100 px-4 py-2 rounded-xl">
                             <div className="flex items-center gap-2">
-                                <span className="w-3 h-3 bg-blue-500 rounded-full inline-block shadow"></span>{" "}
+                                <span className="w-3 h-3 bg-blue-500 rounded-full inline-block shadow"></span>
                                 Player
                             </div>
                             <div className="flex items-center gap-2">
-                                <span className="w-3 h-3 bg-red-500 rounded-full inline-block shadow"></span>{" "}
+                                <span className="w-3 h-3 bg-red-500 rounded-full inline-block shadow"></span>
                                 Target
                             </div>
                         </div>
@@ -77,7 +72,6 @@ export default function MortarTrainingPage() {
                     </div>
                 </div>
 
-                {/* Right Side: Controls */}
                 <div className="w-full md:w-80 bg-white p-6 rounded-2xl shadow-xl border border-gray-200 flex flex-col">
                     <h2 className="text-lg font-bold text-gray-800 mb-6 uppercase tracking-wider border-b border-gray-100 pb-3">
                         Firing Solution
@@ -105,22 +99,10 @@ export default function MortarTrainingPage() {
                         </div>
 
                         <button
+                            type="button"
                             onClick={handleCheck}
-                            className="w-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-bold py-3 px-4 rounded-xl transition-all shadow hover:shadow-md flex items-center justify-center gap-2"
+                            className="w-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-bold py-3 px-4 rounded-xl transition-all shadow hover:shadow-md"
                         >
-                            <svg
-                                className="w-5 h-5"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M13 10V3L4 14h7v7l9-11h-7z"
-                                ></path>
-                            </svg>
                             Fire Mortar
                         </button>
 
@@ -135,12 +117,12 @@ export default function MortarTrainingPage() {
                                           : "bg-red-50 border-red-400")
                                 }
                             >
-                                <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                                <h3 className="font-bold text-gray-800 mb-3">
                                     {result.difference <= 10
-                                        ? "🎯 Bullseye!"
+                                        ? "Bullseye"
                                         : result.difference <= 30
-                                          ? "⚠️ Close Call!"
-                                          : "❌ Missed!"}
+                                          ? "Close Call"
+                                          : "Missed"}
                                 </h3>
                                 <div className="space-y-2 text-sm">
                                     <div className="flex justify-between border-b border-gray-200/50 pb-1">
@@ -163,16 +145,7 @@ export default function MortarTrainingPage() {
                                         <span className="text-gray-600">
                                             Deviation
                                         </span>
-                                        <span
-                                            className={
-                                                "font-mono font-bold " +
-                                                (result.difference <= 10
-                                                    ? "text-green-600"
-                                                    : result.difference <= 30
-                                                      ? "text-yellow-600"
-                                                      : "text-red-600")
-                                            }
-                                        >
+                                        <span className="font-mono font-bold text-gray-900">
                                             {result.difference.toFixed(1)}m
                                         </span>
                                     </div>
@@ -181,22 +154,10 @@ export default function MortarTrainingPage() {
                         )}
 
                         <button
+                            type="button"
                             onClick={generateNewChallenge}
-                            className="w-full mt-8 bg-gray-800 hover:bg-gray-900 active:bg-black text-white font-bold py-3 px-4 rounded-xl transition-all shadow flex items-center justify-center gap-2"
+                            className="w-full mt-8 bg-gray-800 hover:bg-gray-900 active:bg-black text-white font-bold py-3 px-4 rounded-xl transition-all shadow"
                         >
-                            <svg
-                                className="w-5 h-5"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-                                ></path>
-                            </svg>
                             Next Target
                         </button>
                     </div>

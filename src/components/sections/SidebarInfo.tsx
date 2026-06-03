@@ -1,5 +1,3 @@
-import React from "react";
-import Link from "next/link";
 
 const skillGroups = [
     {
@@ -130,13 +128,13 @@ export const SidebarInfo = () => {
                         }
 
                         return (
-                            <Link
+                            <a
                                 key={favorite.label}
                                 href={favorite.href}
                                 className={chipClassName}
                             >
                                 {favorite.label}
-                            </Link>
+                            </a>
                         );
                     })}
                 </div>

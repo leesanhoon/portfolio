@@ -1,4 +1,4 @@
-﻿import React from "react";
+import { Fragment } from "react";
 
 interface MapGridProps {
     playerPos: { x: number; y: number };
@@ -6,13 +6,13 @@ interface MapGridProps {
 }
 
 export default function MapGrid({ playerPos, targetPos }: MapGridProps) {
-    // Lưới 10x10 ô vuông
+    // Lu?i 10x10 � vu�ng
     const gridSize = 10;
     const gridLines = Array.from({ length: gridSize + 1 });
 
     return (
         <div className="absolute inset-0 w-full h-full">
-            {/* Vẽ các đường lưới dọc và ngang */}
+            {/* V? c�c du?ng lu?i d?c v� ngang */}
             <div className="absolute inset-0 grid grid-cols-10 grid-rows-10">
                 {Array.from({ length: 100 }).map((_, i) => (
                     <div
@@ -22,10 +22,10 @@ export default function MapGrid({ playerPos, targetPos }: MapGridProps) {
                 ))}
             </div>
 
-            {/* Hiển thị tọa độ lưới (Tùy chọn, để dễ nhìn hơn) */}
+            {/* Hi?n th? t?a d? lu?i (T�y ch?n, d? d? nh�n hon) */}
             <div className="absolute inset-0 pointer-events-none">
                 {gridLines.map((_, i) => (
-                    <React.Fragment key={i}>
+                    <Fragment key={i}>
                         <div
                             className="absolute top-0 bottom-0 border-l border-gray-400"
                             style={{ left: (i / gridSize) * 100 + "%" }}
@@ -34,7 +34,7 @@ export default function MapGrid({ playerPos, targetPos }: MapGridProps) {
                             className="absolute left-0 right-0 border-t border-gray-400"
                             style={{ top: (i / gridSize) * 100 + "%" }}
                         />
-                    </React.Fragment>
+                    </Fragment>
                 ))}
             </div>
 
@@ -60,7 +60,7 @@ export default function MapGrid({ playerPos, targetPos }: MapGridProps) {
                 <span className="text-[8px] text-white font-bold">T</span>
             </div>
 
-            {/* Đường nối tham khảo (đường chim bay) */}
+            {/* �u?ng n?i tham kh?o (du?ng chim bay) */}
             <svg className="absolute inset-0 w-full h-full pointer-events-none z-0">
                 <line
                     x1={(playerPos.x / gridSize) * 100 + "%"}

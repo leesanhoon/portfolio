@@ -1,10 +1,61 @@
-import React from "react";
+import {
+    FiActivity,
+    FiCode,
+    FiGitBranch,
+    FiRefreshCw,
+} from "react-icons/fi";
 
 const metrics = [
-    { value: "6+ years", label: ".NET development" },
-    { value: ">2s -> <200ms", label: "Cart API improvement" },
-    { value: ".NET Framework -> .NET Core", label: "Migration experience" },
-    { value: "SOAP -> REST", label: "Integration modernization" },
+    {
+        icon: FiCode,
+        label: ".NET development",
+        content: <span>6+ years</span>,
+    },
+    {
+        icon: FiActivity,
+        label: "Cart API improvement",
+        content: (
+            <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-2">
+                <span className="rounded-md bg-slate-900/80 px-2 py-1 text-center text-sm text-slate-300">
+                    Before 2s+
+                </span>
+                <span className="text-cyan-300">→</span>
+                <span className="rounded-md bg-cyan-400/10 px-2 py-1 text-center text-sm text-cyan-200">
+                    After 200ms
+                </span>
+            </div>
+        ),
+    },
+    {
+        icon: FiGitBranch,
+        label: "Migration experience",
+        content: (
+            <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-2">
+                <span className="rounded-md bg-slate-900/80 px-2 py-1 text-center text-sm text-slate-300">
+                    Framework
+                </span>
+                <span className="text-cyan-300">→</span>
+                <span className="rounded-md bg-cyan-400/10 px-2 py-1 text-center text-sm text-cyan-200">
+                    Core
+                </span>
+            </div>
+        ),
+    },
+    {
+        icon: FiRefreshCw,
+        label: "Integration modernization",
+        content: (
+            <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-2">
+                <span className="rounded-md bg-slate-900/80 px-2 py-1 text-center text-sm text-slate-300">
+                    SOAP
+                </span>
+                <span className="text-cyan-300">→</span>
+                <span className="rounded-md bg-cyan-400/10 px-2 py-1 text-center text-sm text-cyan-200">
+                    REST
+                </span>
+            </div>
+        ),
+    },
 ];
 
 export const ImpactMetrics = () => {
@@ -30,9 +81,12 @@ export const ImpactMetrics = () => {
                         key={metric.label}
                         className="bg-[#111827] border border-slate-800 rounded-xl p-4"
                     >
-                        <p className="text-base font-semibold text-slate-100 mb-1">
-                            {metric.value}
-                        </p>
+                        <div className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-lg bg-cyan-400/10 text-cyan-300">
+                            <metric.icon className="h-4 w-4" />
+                        </div>
+                        <div className="text-base font-semibold text-slate-100 mb-2">
+                            {metric.content}
+                        </div>
                         <p className="text-xs text-slate-500 leading-relaxed">
                             {metric.label}
                         </p>

@@ -1,11 +1,10 @@
-import React from "react";
 
 export const MWGExperience = () => {
     return (
         <div className="relative mb-16 lg:mb-20 group">
             {/* Marker */}
-            <div className="absolute -left-[27px] md:-left-[67px] top-6 w-6 h-6 rounded-full bg-[#0B1120] border-4 border-slate-700 flex items-center justify-center group-hover:border-cyan-500 transition-colors z-10">
-                <div className="w-1.5 h-1.5 bg-slate-700 group-hover:bg-white rounded-full transition-colors"></div>
+            <div className="absolute -left-[26px] md:-left-[46px] top-3 w-3 h-3 rounded-full bg-[#0B1120] border border-slate-600 group-hover:border-cyan-400 transition-colors z-10">
+                <div className="sr-only">Role</div>
             </div>
 
             <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
@@ -28,7 +27,7 @@ export const MWGExperience = () => {
                             href="https://apps.apple.com/vn/app/quà-tặng-vip/id1589555369"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex-1 sm:flex-none px-6 py-2.5 bg-black rounded-2xl text-sm font-bold text-white flex items-center justify-center gap-3 hover:bg-zinc-900 transition-all border border-white/10 shadow-xl"
+                            className="flex-1 sm:flex-none px-4 py-2 bg-black rounded-md text-sm font-medium text-white flex items-center justify-center gap-3 hover:bg-zinc-900 transition-colors border border-white/10"
                         >
                             <svg
                                 className="w-5 h-5"
@@ -43,7 +42,7 @@ export const MWGExperience = () => {
                             href="https://play.google.com/store/apps/details?id=mwg.tgdd.loyalty&pcampaignid=web_share"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex-1 sm:flex-none px-6 py-2.5 bg-white rounded-2xl text-sm font-bold text-slate-900 flex items-center justify-center gap-3 hover:bg-slate-50 transition-all shadow-xl"
+                            className="flex-1 sm:flex-none px-4 py-2 bg-white rounded-md text-sm font-medium text-slate-900 flex items-center justify-center gap-3 hover:bg-slate-50 transition-colors"
                         >
                             <svg className="w-5 h-5" viewBox="0 0 24 24">
                                 <path
