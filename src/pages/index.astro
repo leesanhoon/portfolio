@@ -14,27 +14,27 @@ import { ImpactMetrics } from "@/components/sections/ImpactMetrics";
 
 <BaseLayout>
     <div class="min-h-screen bg-[#0B1120] text-slate-300 flex flex-col lg:flex-row font-sans selection:bg-cyan-500/30">
-        <aside class="w-full lg:w-[340px] bg-[#101827] border-b lg:border-b-0 lg:border-r border-slate-800/70 lg:h-screen overflow-y-auto lg:sticky lg:top-0 scrollbar-hide p-6 lg:p-8 flex flex-col">
+        <aside class="w-full lg:w-[340px] bg-[#101827] border-b lg:border-b-0 lg:border-r border-slate-800/70 lg:h-screen overflow-y-auto lg:sticky lg:top-0 scrollbar-hide p-4 lg:p-8 flex flex-col">
             <ProfileSection />
-            <SidebarInfo />
+            <SidebarInfo client:load />
         </aside>
 
-        <main class="flex-1 p-6 md:p-10 lg:p-12 overflow-y-auto scroll-smooth">
+        <main class="flex-1 p-4 md:p-10 lg:p-12 overflow-y-auto scroll-smooth">
             <div class="max-w-5xl mx-auto">
                 <ImpactMetrics />
 
-                <div class="flex items-center gap-4 mb-8">
+                <div class="flex items-center gap-4 mb-5 md:mb-8">
                     <h2 class="text-2xl md:text-3xl font-semibold text-white flex items-center gap-3">
                         Experience
                         <div class="w-10 h-px bg-cyan-400/60"></div>
                     </h2>
                 </div>
 
-                <div class="relative pl-5 md:pl-10">
+                <div class="relative pl-4 md:pl-10">
                     <div class="absolute left-0 top-1 bottom-0 w-px bg-slate-700"></div>
-                    <EasybookExperience />
-                    <MWGExperience />
-                    <BachhoaxanhExperience />
+                    <EasybookExperience client:load />
+                    <MWGExperience client:load />
+                    <BachhoaxanhExperience client:load />
                 </div>
 
                 <AIExperience />

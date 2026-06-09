@@ -1,4 +1,6 @@
 
+import { CollapsibleSection } from "../ui/CollapsibleSection";
+
 const skillGroups = [
     {
         title: "Backend",
@@ -33,7 +35,7 @@ const favorites = [
 
 export const SidebarInfo = () => {
     return (
-        <div className="space-y-8 px-1 mt-2 text-left">
+        <div className="space-y-4 lg:space-y-8 px-1 mt-2 text-left">
             <section>
                 <h3 className="text-base font-semibold text-white mb-3">
                     About
@@ -46,10 +48,7 @@ export const SidebarInfo = () => {
                 </p>
             </section>
 
-            <section>
-                <h3 className="text-base font-semibold text-white mb-3">
-                    Focus Areas
-                </h3>
+            <CollapsibleSection title="Focus Areas">
                 <ul className="space-y-2.5">
                     {focusAreas.map((item) => (
                         <li
@@ -60,12 +59,9 @@ export const SidebarInfo = () => {
                         </li>
                     ))}
                 </ul>
-            </section>
+            </CollapsibleSection>
 
-            <section>
-                <h3 className="text-base font-semibold text-white mb-4">
-                    Skills
-                </h3>
+            <CollapsibleSection title="Skills">
                 <div className="space-y-4">
                     {skillGroups.map((group) => (
                         <div key={group.title}>
@@ -85,12 +81,9 @@ export const SidebarInfo = () => {
                         </div>
                     ))}
                 </div>
-            </section>
+            </CollapsibleSection>
 
-            <section>
-                <h3 className="text-base font-semibold text-white mb-3">
-                    Education
-                </h3>
+            <CollapsibleSection title="Education">
                 <div className="rounded-xl border border-slate-800 bg-[#111827] p-4">
                     <p className="text-slate-200 text-sm font-medium leading-6">
                         Bachelor of Software Engineering
@@ -102,12 +95,9 @@ export const SidebarInfo = () => {
                         Van Lang University
                     </p>
                 </div>
-            </section>
+            </CollapsibleSection>
 
-            <section>
-                <h3 className="text-base font-semibold text-white mb-3">
-                    Favorites
-                </h3>
+            <CollapsibleSection title="Favorites">
                 <div className="flex flex-wrap gap-2">
                     {favorites.map((favorite) => {
                         const chipClassName =
@@ -138,12 +128,9 @@ export const SidebarInfo = () => {
                         );
                     })}
                 </div>
-            </section>
+            </CollapsibleSection>
 
-            <section className="pb-10">
-                <h3 className="text-base font-semibold text-white mb-3">
-                    Contact
-                </h3>
+            <CollapsibleSection title="Contact" className="pb-4 lg:pb-10">
                 <div className="space-y-3 text-sm">
                     <p className="text-slate-400">
                         <span className="text-slate-500">Phone: </span>
@@ -158,7 +145,7 @@ export const SidebarInfo = () => {
                         Ho Chi Minh City
                     </p>
                 </div>
-            </section>
+            </CollapsibleSection>
         </div>
     );
 };

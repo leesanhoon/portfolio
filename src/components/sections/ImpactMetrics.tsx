@@ -19,12 +19,12 @@ const metrics = [
 
 export const ImpactMetrics = () => {
     return (
-        <section className="mb-12 lg:mb-14">
-            <div className="mb-6 max-w-3xl">
+        <section className="mb-8 lg:mb-14">
+            <div className="mb-4 md:mb-6 max-w-3xl">
                 <p className="text-cyan-300 text-sm font-medium mb-3">
                     .NET Developer
                 </p>
-                <h2 className="text-2xl md:text-4xl font-semibold text-white leading-tight mb-4">
+                <h2 className="text-2xl md:text-4xl font-semibold text-white leading-tight mb-3 md:mb-4">
                     Backend developer focused on .NET APIs, system migration,
                     and practical performance improvement.
                 </h2>
@@ -34,7 +34,7 @@ export const ImpactMetrics = () => {
                 </p>
             </div>
 
-            <div className="space-y-3 border-l border-slate-800/80 pl-4 md:pl-5">
+            <div className="space-y-2 md:space-y-3 border-l border-slate-800/80 pl-4 md:pl-5">
                 {metrics.map((metric) => (
                     <div
                         key={metric.label}

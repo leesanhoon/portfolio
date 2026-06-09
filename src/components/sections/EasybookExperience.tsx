@@ -1,9 +1,10 @@
 
+import { CollapsibleSection } from "../ui/CollapsibleSection";
+
 export const EasybookExperience = () => {
     return (
-        <div className="relative mb-16 lg:mb-20 group">
-            {/* Marker */}
-            <div className="absolute -left-[26px] md:-left-[46px] top-3 w-3 h-3 rounded-full bg-[#0B1120] border border-cyan-400 z-10">
+        <div className="relative mb-8 lg:mb-20 group">
+            <div className="absolute -left-[22px] md:-left-[46px] top-3 w-3 h-3 rounded-full bg-[#0B1120] border border-cyan-400 z-10">
                 <div className="sr-only">Current role</div>
             </div>
 
@@ -13,9 +14,8 @@ export const EasybookExperience = () => {
                 </span>
             </div>
 
-            {/* Card Body */}
-            <div className="bg-[#111827] rounded-xl p-5 md:p-7 border border-slate-800 group-hover:border-cyan-500/30 transition-colors">
-                <div className="mb-8 md:mb-10 text-left">
+            <div className="bg-[#111827] rounded-xl p-4 md:p-7 border border-slate-800 group-hover:border-cyan-500/30 transition-colors">
+                <div className="mb-5 md:mb-10 text-left">
                     <a
                         href="https://www.easybook.com"
                         target="_blank"
@@ -39,11 +39,11 @@ export const EasybookExperience = () => {
                             </svg>
                         </h3>
                     </a>
-                    <p className="text-slate-400 text-xs md:text-sm font-bold mb-6">
+                    <p className="text-slate-400 text-xs md:text-sm font-bold mb-4 md:mb-6">
                         .NET Developer | 09/2025 - Present
                     </p>
 
-                    <div className="mb-8 p-5 bg-cyan-500/5 border-l-4 border-cyan-500 rounded-r-2xl">
+                    <div className="mb-5 md:mb-8 p-4 md:p-5 bg-cyan-500/5 border-l-4 border-cyan-500 rounded-r-2xl">
                         <p className="text-slate-300 text-sm italic leading-relaxed">
                             Easybook is a leading land and sea travel booking
                             platform in Southeast Asia, providing ticketing
@@ -52,29 +52,29 @@ export const EasybookExperience = () => {
                         </p>
                     </div>
 
-                    <div className="flex flex-wrap gap-4 mb-8 md:mb-10">
+                    <div className="flex gap-2 sm:gap-4 mb-5 md:mb-10">
                         <a
                             href="https://apps.apple.com/sg/app/easybook-bus-train-ferry-tour/id668514565"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex-1 sm:flex-none px-4 py-2 bg-black rounded-md text-sm font-medium text-white flex items-center justify-center gap-3 hover:bg-zinc-900 transition-colors border border-white/10"
+                            className="w-11 h-11 sm:w-auto sm:h-auto sm:px-4 sm:py-2 bg-black rounded-md text-sm font-medium text-white flex items-center justify-center gap-3 hover:bg-zinc-900 transition-colors border border-white/10"
                         >
                             <svg
-                                className="w-5 h-5"
+                                className="w-5 h-5 shrink-0"
                                 viewBox="0 0 384 512"
                                 fill="currentColor"
                             >
                                 <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 21.8-88.5 21.8-11.4 0-51.1-22.1-82.6-21.4-41.4.6-79.5 24.1-100.8 61.1-42.9 74.4-11 183.8 30.6 243.9 20.4 29.4 45 61.9 76.8 60.7 30.4-1.2 41.9-19.6 78.4-19.6 36.4 0 47 19.6 78.4 18.9 32.4-.6 53.7-29.4 73.8-58.8 23.3-34 32.8-67 33.1-68.7-.7-.3-64.2-24.6-64.5-98.4zM233 104.9c15.8-19.1 26.5-45.6 23.6-72.2-22.9 1-50.7 15.3-67.1 34.5-14.7 17.1-27.5 44.4-23.9 70.3 25.5 2 51.6-13.5 67.4-32.6z" />
                             </svg>
-                            App Store
+                            <span className="hidden sm:inline">App Store</span>
                         </a>
                         <a
                             href="https://play.google.com/store/apps/details?id=easiphone.easibookbustickets&pcampaignid=web_share"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex-1 sm:flex-none px-4 py-2 bg-white rounded-md text-sm font-medium text-slate-900 flex items-center justify-center gap-3 hover:bg-slate-50 transition-colors"
+                            className="w-11 h-11 sm:w-auto sm:h-auto sm:px-4 sm:py-2 bg-white rounded-md text-sm font-medium text-slate-900 flex items-center justify-center gap-3 hover:bg-slate-50 transition-colors"
                         >
-                            <svg className="w-5 h-5" viewBox="0 0 24 24">
+                            <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24">
                                 <path
                                     fill="#00E676"
                                     d="M17.523 15.341l-3.327-3.341 3.327-3.341 4.159 2.408c.594.344.918.84.918 1.333s-.324.989-.918 1.333l-4.159 2.408z"
@@ -92,20 +92,19 @@ export const EasybookExperience = () => {
                                     d="M2.786 23.455c-.482-.369-.786-.989-.786-1.742v-19.426c0-.753.304-1.373.786-1.742l11.41 11.455-11.41 11.455z"
                                 />
                             </svg>
-                            Google Play
+                            <span className="hidden sm:inline">Google Play</span>
                         </a>
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 mb-16 text-left">
-                    <div className="space-y-12">
-                        {/* Core Responsibilities */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 md:gap-y-16 mb-8 md:mb-16 text-left">
+                    <div className="space-y-8 md:space-y-12">
                         <section>
-                            <h4 className="text-base font-semibold text-white mb-5 flex items-center gap-3">
+                            <h4 className="text-base font-semibold text-white mb-4 md:mb-5 flex items-center gap-3">
                                 <span className="text-xl">🛠️</span> Core
                                 Responsibilities
                             </h4>
-                            <ul className="space-y-5">
+                            <ul className="space-y-3 md:space-y-5">
                                 {[
                                     {
                                         title: "System Development",
@@ -133,14 +132,13 @@ export const EasybookExperience = () => {
                         </section>
                     </div>
 
-                    <div className="space-y-12">
-                        {/* Key Achievements */}
+                    <div className="space-y-8 md:space-y-12">
                         <section>
-                            <h4 className="text-base font-semibold text-white mb-5 flex items-center gap-3">
+                            <h4 className="text-base font-semibold text-white mb-4 md:mb-5 flex items-center gap-3">
                                 <span className="text-xl">🏆</span> Key
                                 Achievements
                             </h4>
-                            <div className="space-y-4">
+                            <div className="space-y-3 md:space-y-4">
                                 {[
                                     "Successfully migrated communication layer from legacy SOAP to REST APIs for assigned modules.",
                                     "Optimized SQL Server queries for the booking module, improving stability during high-traffic hours.",
@@ -148,7 +146,7 @@ export const EasybookExperience = () => {
                                 ].map((text, i) => (
                                     <div
                                         key={i}
-                                        className="p-4 bg-cyan-500/5 rounded-2xl border border-cyan-500/10 flex gap-3 items-start"
+                                        className="p-3 md:p-4 bg-cyan-500/5 rounded-2xl border border-cyan-500/10 flex gap-3 items-start"
                                     >
                                         <span className="text-cyan-400 text-lg font-bold">
                                             ✓
@@ -163,12 +161,8 @@ export const EasybookExperience = () => {
                     </div>
                 </div>
 
-                {/* Detailed Projects */}
-                <section className="text-left">
-                    <h4 className="text-base font-semibold text-white mb-6 flex items-center gap-3">
-                        <span className="text-xl">🚀</span> Featured Projects
-                    </h4>
-                    <div className="grid grid-cols-1 gap-6">
+                <CollapsibleSection title="🚀 Featured Projects" className="text-left">
+                    <div className="grid grid-cols-1 gap-4 md:gap-6">
                         {[
                             {
                                 id: 1,
@@ -220,9 +214,9 @@ export const EasybookExperience = () => {
                         ].map((project) => (
                             <div
                                 key={project.id}
-                                className="p-5 md:p-6 bg-[#0B1120]/45 rounded-xl border border-slate-800 hover:border-cyan-500/25 transition-colors"
+                                className="p-4 md:p-6 bg-[#0B1120]/45 rounded-xl border border-slate-800 hover:border-cyan-500/25 transition-colors"
                             >
-                                <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+                                <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 md:gap-4 mb-4 md:mb-6">
                                     <div>
                                         <h5 className="text-lg font-semibold text-white mb-1">
                                             {project.id}. {project.title}
@@ -242,7 +236,7 @@ export const EasybookExperience = () => {
                                         ))}
                                     </div>
                                 </div>
-                                <ul className="space-y-3">
+                                <ul className="space-y-2 md:space-y-3">
                                     {project.bullets.map((bullet, i) => (
                                         <li
                                             key={i}
@@ -258,7 +252,7 @@ export const EasybookExperience = () => {
                             </div>
                         ))}
                     </div>
-                </section>
+                </CollapsibleSection>
             </div>
         </div>
     );

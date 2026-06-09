@@ -42,8 +42,8 @@ const projects = [
 
 export const ProjectsSection = () => {
     return (
-        <section className="mt-16">
-            <div className="flex items-center gap-4 mb-8">
+        <section className="mt-10 md:mt-16">
+            <div className="flex items-center gap-4 mb-5 md:mb-8">
                 <h2 className="text-2xl md:text-3xl font-semibold text-white flex items-center gap-3">
                     Selected Projects
                     <div className="w-10 h-px bg-emerald-400/60"></div>
@@ -61,7 +61,7 @@ export const ProjectsSection = () => {
                                 ? "noopener noreferrer"
                                 : undefined
                         }
-                        className="group bg-[#111827] rounded-xl p-5 border border-slate-800 hover:border-emerald-400/40 transition-colors flex flex-col min-h-[280px]"
+                        className="group bg-[#111827] rounded-xl p-4 md:p-5 border border-slate-800 hover:border-emerald-400/40 transition-colors flex flex-col min-h-0 lg:min-h-[280px]"
                     >
                         <div className="mb-4 flex items-start justify-between gap-4">
                             <div className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-400/10 text-emerald-300">

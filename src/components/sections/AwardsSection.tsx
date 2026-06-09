@@ -26,23 +26,23 @@ const milestones = [
 
 export const AwardsSection = () => {
     return (
-        <section className="mt-16">
-            <div className="flex items-center gap-4 mb-8">
+        <section className="mt-10 md:mt-16">
+            <div className="flex items-center gap-4 mb-5 md:mb-8">
                 <h2 className="text-2xl md:text-3xl font-semibold text-white flex items-center gap-3">
                     Milestones
                     <div className="w-10 h-px bg-amber-400/60"></div>
                 </h2>
             </div>
 
-            <div className="relative pl-5 md:pl-10">
+            <div className="relative pl-4 md:pl-10">
                 <div className="absolute left-0 top-1 bottom-0 w-px bg-slate-700"></div>
 
                 {milestones.map((item, index) => (
                     <div
                         key={item.title}
-                        className={index === milestones.length - 1 ? "relative" : "relative mb-8"}
+                        className={index === milestones.length - 1 ? "relative" : "relative mb-6 md:mb-8"}
                     >
-                        <div className="absolute -left-[27px] md:-left-[47px] top-2 w-3 h-3 rounded-full bg-[#0B1120] border border-amber-400 z-10"></div>
+                        <div className="absolute -left-[22px] md:-left-[47px] top-2 w-3 h-3 rounded-full bg-[#0B1120] border border-amber-400 z-10"></div>
 
                         <div className="mb-3">
                             <span className="text-xs text-slate-500">
@@ -50,7 +50,7 @@ export const AwardsSection = () => {
                             </span>
                         </div>
 
-                        <div className="bg-[#111827] rounded-xl p-5 md:p-6 border border-slate-800">
+                        <div className="bg-[#111827] rounded-xl p-4 md:p-6 border border-slate-800">
                             <h3 className="text-lg md:text-xl font-semibold text-white mb-1">
                                 {item.title}
                             </h3>
@@ -60,7 +60,7 @@ export const AwardsSection = () => {
                             <p className="text-slate-400 text-sm leading-6 mb-4">
                                 {item.description}
                             </p>
-                            <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-3">
                                 {item.notes.map((note) => (
                                     <li
                                         key={note}

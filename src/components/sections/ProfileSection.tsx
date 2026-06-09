@@ -30,27 +30,31 @@ export const ProfileSection = () => {
     ];
 
     return (
-        <div className="flex flex-col items-center text-center mb-8">
-            <div className="mb-5">
-                <div className="w-24 h-24 rounded-full border border-slate-700 overflow-hidden relative">
-                    <img
-                        src="/1758714776206.jpg"
-                        alt="Nguyen Tan Ninh"
-                        className="w-full h-full object-cover"
-                        onError={(e) => {
-                            e.currentTarget.src =
-                                "https://ui-avatars.com/api/?name=Nguyen+Tan+Ninh&background=0B1120&color=42A5F5&size=512&bold=true";
-                        }}
-                    />
+        <div className="mb-4 lg:mb-8">
+            <div className="flex flex-row items-center gap-4 lg:flex-col lg:items-center lg:text-center mb-4 lg:mb-5">
+                <div className="shrink-0">
+                    <div className="w-16 h-16 lg:w-24 lg:h-24 rounded-full border border-slate-700 overflow-hidden relative">
+                        <img
+                            src="/1758714776206.jpg"
+                            alt="Nguyen Tan Ninh"
+                            className="w-full h-full object-cover"
+                            onError={(e) => {
+                                e.currentTarget.src =
+                                    "https://ui-avatars.com/api/?name=Nguyen+Tan+Ninh&background=0B1120&color=42A5F5&size=512&bold=true";
+                            }}
+                        />
+                    </div>
+                </div>
+
+                <div className="flex flex-col lg:items-center">
+                    <h1 className="text-lg lg:text-xl font-semibold text-white mb-0.5">
+                        Nguyen Tan Ninh
+                    </h1>
+                    <p className="text-slate-400 text-sm">.NET Developer</p>
                 </div>
             </div>
 
-            <h1 className="text-xl font-semibold text-white mb-1">
-                Nguyen Tan Ninh
-            </h1>
-            <p className="text-slate-400 text-sm mb-5">.NET Developer</p>
-
-            <div className="flex gap-2 mb-6">
+            <div className="flex gap-2 mb-4 lg:mb-6 lg:justify-center">
                 {socialLinks.map((item) => (
                     <a
                         key={item.label}
@@ -70,7 +74,7 @@ export const ProfileSection = () => {
                 ))}
             </div>
 
-            <div className="grid grid-cols-3 gap-2 w-full">
+            <div className="grid grid-cols-3 gap-1.5 lg:gap-2 w-full">
                 <a
                     href="mailto:nguyentanninh123@gmail.com"
                     className="flex items-center justify-center gap-1.5 py-2 bg-cyan-500/90 text-slate-950 rounded-md text-xs font-medium hover:bg-cyan-400 transition-colors px-2"

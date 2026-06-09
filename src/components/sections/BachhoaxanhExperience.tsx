@@ -1,9 +1,10 @@
 
+import { CollapsibleSection } from "../ui/CollapsibleSection";
+
 export const BachhoaxanhExperience = () => {
     return (
         <div className="relative mb-8 group">
-            {/* Marker */}
-            <div className="absolute -left-[26px] md:-left-[46px] top-3 w-3 h-3 rounded-full bg-[#0B1120] border border-slate-600 group-hover:border-cyan-400 transition-colors z-10">
+            <div className="absolute -left-[22px] md:-left-[46px] top-3 w-3 h-3 rounded-full bg-[#0B1120] border border-slate-600 group-hover:border-cyan-400 transition-colors z-10">
                 <div className="sr-only">Role</div>
             </div>
 
@@ -13,8 +14,8 @@ export const BachhoaxanhExperience = () => {
                 </span>
             </div>
 
-            <div className="bg-[#111827] rounded-xl p-5 md:p-7 border border-slate-800 group-hover:border-cyan-500/30 transition-colors">
-                <div className="mb-10 text-left">
+            <div className="bg-[#111827] rounded-xl p-4 md:p-7 border border-slate-800 group-hover:border-cyan-500/30 transition-colors">
+                <div className="mb-6 md:mb-10 text-left">
                     <a
                         href="https://www.bachhoaxanh.com"
                         target="_blank"
@@ -38,33 +39,33 @@ export const BachhoaxanhExperience = () => {
                             </svg>
                         </h3>
                     </a>
-                    <p className="text-slate-400 text-xs md:text-sm font-bold mb-6">
+                    <p className="text-slate-400 text-xs md:text-sm font-bold mb-4 md:mb-6">
                         Software Engineer / .Net Developer
                     </p>
 
-                    <div className="flex flex-wrap gap-4 mb-8 md:mb-10">
+                    <div className="flex gap-2 sm:gap-4 mb-5 md:mb-10">
                         <a
                             href="https://apps.apple.com/vn/app/bách-hóa-xanh/id1207511445"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex-1 sm:flex-none px-4 py-2 bg-black rounded-md text-sm font-medium text-white flex items-center justify-center gap-3 hover:bg-zinc-900 transition-colors border border-white/10"
+                            className="w-11 h-11 sm:w-auto sm:h-auto sm:px-4 sm:py-2 bg-black rounded-md text-sm font-medium text-white flex items-center justify-center gap-3 hover:bg-zinc-900 transition-colors border border-white/10"
                         >
                             <svg
-                                className="w-5 h-5"
+                                className="w-5 h-5 shrink-0"
                                 viewBox="0 0 384 512"
                                 fill="currentColor"
                             >
                                 <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 21.8-88.5 21.8-11.4 0-51.1-22.1-82.6-21.4-41.4.6-79.5 24.1-100.8 61.1-42.9 74.4-11 183.8 30.6 243.9 20.4 29.4 45 61.9 76.8 60.7 30.4-1.2 41.9-19.6 78.4-19.6 36.4 0 47 19.6 78.4 18.9 32.4-.6 53.7-29.4 73.8-58.8 23.3-34 32.8-67 33.1-68.7-.7-.3-64.2-24.6-64.5-98.4zM233 104.9c15.8-19.1 26.5-45.6 23.6-72.2-22.9 1-50.7 15.3-67.1 34.5-14.7 17.1-27.5 44.4-23.9 70.3 25.5 2 51.6-13.5 67.4-32.6z" />
                             </svg>
-                            App Store
+                            <span className="hidden sm:inline">App Store</span>
                         </a>
                         <a
                             href="https://play.google.com/store/apps/details?id=com.bachhoaxanh&pcampaignid=web_share"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex-1 sm:flex-none px-4 py-2 bg-white rounded-md text-sm font-medium text-slate-900 flex items-center justify-center gap-3 hover:bg-slate-50 transition-colors"
+                            className="w-11 h-11 sm:w-auto sm:h-auto sm:px-4 sm:py-2 bg-white rounded-md text-sm font-medium text-slate-900 flex items-center justify-center gap-3 hover:bg-slate-50 transition-colors"
                         >
-                            <svg className="w-5 h-5" viewBox="0 0 24 24">
+                            <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24">
                                 <path
                                     fill="#00E676"
                                     d="M17.523 15.341l-3.327-3.341 3.327-3.341 4.159 2.408c.594.344.918.84.918 1.333s-.324.989-.918 1.333l-4.159 2.408z"
@@ -82,25 +83,21 @@ export const BachhoaxanhExperience = () => {
                                     d="M2.786 23.455c-.482-.369-.786-.989-.786-1.742v-19.426c0-.753.304-1.373.786-1.742l11.41 11.455-11.41 11.455z"
                                 />
                             </svg>
-                            Google Play
+                            <span className="hidden sm:inline">Google Play</span>
                         </a>
                     </div>
                 </div>
 
-                <div className="space-y-12 text-left">
-                    <div className="grid grid-cols-1 gap-y-12">
+                <div className="space-y-8 md:space-y-12 text-left">
+                    <div className="grid grid-cols-1 gap-y-8 md:gap-y-12">
                         <section>
-                            <h4 className="text-base font-semibold text-white mb-5 flex items-center gap-3">
+                            <h4 className="text-base font-semibold text-white mb-4 md:mb-5 flex items-center gap-3">
                                 <span className="text-xl">🛠️</span> Key
                                 Responsibilities & Achievements
                             </h4>
-                            <ul className="space-y-8">
-                                <li className="space-y-4">
-                                    <span className="block text-sm font-semibold text-slate-200 border-l border-cyan-500/70 pl-3">
-                                        Website System Migration and
-                                        Optimization:
-                                    </span>
-                                    <ul className="space-y-3 pl-4">
+                            <ul className="space-y-6 md:space-y-8">
+                                <CollapsibleSection title="Website System Migration and Optimization" defaultOpen={true}>
+                                    <ul className="space-y-2 md:space-y-3 pl-4">
                                         {[
                                             "Led the seamless migration of the Bachhoaxanh website from .NET Framework to .NET Core, ensuring robust, stable operations for a high-traffic e-commerce platform.",
                                             "Optimized key business modules; reduced shopping cart response time from over 2 seconds to under 200ms, and ensured all other site requests executed in under 200ms, significantly improving system performance and user experience.",
@@ -116,14 +113,10 @@ export const BachhoaxanhExperience = () => {
                                             </li>
                                         ))}
                                     </ul>
-                                </li>
+                                </CollapsibleSection>
 
-                                <li className="space-y-4">
-                                    <span className="block text-sm font-semibold text-slate-200 border-l border-cyan-500/70 pl-3">
-                                        System Architecture Design and Code
-                                        Refactoring:
-                                    </span>
-                                    <ul className="space-y-3 pl-4">
+                                <CollapsibleSection title="System Architecture Design and Code Refactoring">
+                                    <ul className="space-y-2 md:space-y-3 pl-4">
                                         {[
                                             "Redesigned and restructured legacy code into modern, clean, multi-layered service architecture.",
                                             "Separated business logic into distinct service layers, greatly enhancing code manageability, scalability, and maintainability for future feature development.",
@@ -140,13 +133,10 @@ export const BachhoaxanhExperience = () => {
                                             </li>
                                         ))}
                                     </ul>
-                                </li>
+                                </CollapsibleSection>
 
-                                <li className="space-y-4">
-                                    <span className="block text-sm font-semibold text-slate-200 border-l border-cyan-500/70 pl-3">
-                                        Mobile Application Development:
-                                    </span>
-                                    <ul className="space-y-3 pl-4">
+                                <CollapsibleSection title="Mobile Application Development">
+                                    <ul className="space-y-2 md:space-y-3 pl-4">
                                         {[
                                             "Concurrently took on the additional responsibility of developing and maintaining the Bachhoaxanh mobile app using React Native for approximately 3 years.",
                                             "Delivered new features, optimized performance, and ensured cross-platform compatibility, expanding the reach and engagement of Bachhoaxanh on mobile devices.",
@@ -162,13 +152,10 @@ export const BachhoaxanhExperience = () => {
                                             </li>
                                         ))}
                                     </ul>
-                                </li>
+                                </CollapsibleSection>
 
-                                <li className="space-y-4">
-                                    <span className="block text-sm font-semibold text-slate-200 border-l border-cyan-500/70 pl-3">
-                                        Collaboration & Continuous Improvement:
-                                    </span>
-                                    <ul className="space-y-3 pl-4">
+                                <CollapsibleSection title="Collaboration & Continuous Improvement">
+                                    <ul className="space-y-2 md:space-y-3 pl-4">
                                         {[
                                             "Worked closely with cross-functional product, UI/UX, and QA teams during all stages of the SDLC to ensure rapid, high-quality deliverables.",
                                             "Proactively identified bottlenecks and implemented innovative solutions for both backend and mobile platforms.",
@@ -185,24 +172,21 @@ export const BachhoaxanhExperience = () => {
                                             </li>
                                         ))}
                                     </ul>
-                                </li>
+                                </CollapsibleSection>
                             </ul>
                         </section>
 
-                        <section>
-                            <h4 className="text-base font-semibold text-white mb-5 flex items-center gap-3">
-                                <span className="text-xl">🏆</span> Key Results
-                            </h4>
-                            <div className="space-y-4">
+                        <CollapsibleSection title="🏆 Key Results">
+                            <div className="space-y-3 md:space-y-4">
                                 {[
                                     "Achieved faster and more reliable shopping experiences, supporting millions of daily users.",
                                     "Ensured business operations continued flawlessly during and after major technology transitions.",
                                     "Bolstered platform scalability and streamlined future development cycles via a modular, maintainable architecture.",
-                                    "Played a pivotal role in strengthening Bachhoaxanh’s mobile offering and digital transformation roadmap.",
+                                    "Played a pivotal role in strengthening Bachhoaxanh's mobile offering and digital transformation roadmap.",
                                 ].map((text, i) => (
                                     <div
                                         key={i}
-                                        className="flex gap-3 items-start p-4 bg-cyan-500/5 rounded-2xl border border-cyan-500/10"
+                                        className="flex gap-3 items-start p-3 md:p-4 bg-cyan-500/5 rounded-2xl border border-cyan-500/10"
                                     >
                                         <span className="text-emerald-400 font-bold">
                                             ✓
@@ -213,7 +197,7 @@ export const BachhoaxanhExperience = () => {
                                     </div>
                                 ))}
                             </div>
-                        </section>
+                        </CollapsibleSection>
                     </div>
                 </div>
             </div>
