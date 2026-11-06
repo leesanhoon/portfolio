@@ -32,4 +32,4 @@ Astro 6 site with React islands and Tailwind CSS v4. Deployed to Vercel (framewo
 
 ## Styling
 
-Tailwind CSS v4 via `@tailwindcss/postcss`. Dark theme with base background `#0B1120`. Utility-first — styles are inline in components, not in separate CSS files.
+Tailwind CSS v4 via `@tailwindcss/postcss`. Neo-brutalism theme: cream `#F5F1EA` background, black `#111` ink, 2px black borders, hard offset shadows; sidebar is black. Font Space Grotesk. Utility-first — styles are inline in components, not in separate CSS files.

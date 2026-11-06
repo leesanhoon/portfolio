@@ -23,14 +23,14 @@ export const CollapsibleSection = ({
                 onClick={() => setIsOpen(!isOpen)}
                 className="flex w-full items-center justify-between text-left lg:hidden"
             >
-                <h3 className="text-base font-semibold text-white">
+                <h3 className="text-base font-semibold">
                     {title}
                 </h3>
                 <ChevronDown
-                    className={`h-4 w-4 text-slate-500 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
+                    className={`h-4 w-4 opacity-70 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
                 />
             </button>
-            <h3 className="hidden lg:block text-base font-semibold text-white mb-3">
+            <h3 className="hidden lg:block text-base font-semibold mb-3">
                 {title}
             </h3>
             <div

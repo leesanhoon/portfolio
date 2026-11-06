@@ -30,16 +30,16 @@ export const AIExperience = () => {
     return (
         <section className="mt-10 md:mt-16">
             <div className="flex items-center gap-4 mb-5 md:mb-8">
-                <h2 className="text-2xl md:text-3xl font-semibold text-white flex items-center gap-3">
+                <h2 className="text-2xl md:text-3xl font-bold text-[#111] flex items-center gap-3">
                     AI-assisted Workflow
-                    <div className="w-10 h-px bg-violet-400/60"></div>
+                    <div className="w-10 h-3 bg-[#C4A1FF] border-2 border-[#111]"></div>
                 </h2>
             </div>
 
-            <div className="bg-[#111827] rounded-xl p-4 md:p-8 border border-slate-800 text-left">
+            <div className="bg-white shadow-[4px_4px_0_#111] rounded-md p-4 md:p-8 border-2 border-[#111] text-left">
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-8">
                     <div className="max-w-2xl">
-                        <p className="text-slate-400 text-sm md:text-base leading-7">
+                        <p className="text-[#333] text-sm md:text-base leading-7">
                             I use AI tools mainly for reading documents,
                             planning implementation work, understanding legacy
                             code, and drafting technical notes.
@@ -50,7 +50,7 @@ export const AIExperience = () => {
                         {aiTools.map((tool) => (
                             <span
                                 key={tool}
-                                className="px-2.5 py-1 bg-[#1B2535] border border-slate-800 text-slate-400 text-xs rounded-md"
+                                className="px-2.5 py-1 bg-[#FFDC58] border-2 border-[#111] text-[#333] text-xs rounded-md"
                             >
                                 {tool}
                             </span>
@@ -62,12 +62,12 @@ export const AIExperience = () => {
                     {aiUseCases.map((item) => (
                         <div
                             key={item.title}
-                            className="rounded-lg bg-[#0B1120]/55 border border-slate-800 p-4"
+                            className="rounded-md bg-[#F5F1EA] border-2 border-[#111] p-4"
                         >
-                            <h4 className="text-white text-sm font-medium mb-2">
+                            <h4 className="text-[#111] text-sm font-medium mb-2">
                                 {item.title}
                             </h4>
-                            <p className="text-slate-400 text-sm leading-6">
+                            <p className="text-[#333] text-sm leading-6">
                                 {item.desc}
                             </p>
                         </div>

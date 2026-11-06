@@ -33,7 +33,7 @@ export const ProfileSection = () => {
         <div className="mb-4 lg:mb-8">
             <div className="flex flex-row items-center gap-4 lg:flex-col lg:items-center lg:text-center mb-4 lg:mb-5">
                 <div className="shrink-0">
-                    <div className="w-16 h-16 lg:w-24 lg:h-24 rounded-full border border-slate-700 overflow-hidden relative">
+                    <div className="w-16 h-16 lg:w-24 lg:h-24 rounded-full border-4 border-[#FFDC58] overflow-hidden relative">
                         <img
                             src="/1758714776206.jpg"
                             alt="Nguyen Tan Ninh"
@@ -47,10 +47,10 @@ export const ProfileSection = () => {
                 </div>
 
                 <div className="flex flex-col lg:items-center">
-                    <h1 className="text-lg lg:text-xl font-semibold text-white mb-0.5">
+                    <h1 className="text-lg lg:text-xl font-bold text-white mb-0.5">
                         Nguyen Tan Ninh
                     </h1>
-                    <p className="text-slate-400 text-sm">.NET Developer</p>
+                    <p className="text-neutral-300 text-sm">.NET Developer</p>
                 </div>
             </div>
 
@@ -65,7 +65,7 @@ export const ProfileSection = () => {
                                 ? "noopener noreferrer"
                                 : undefined
                         }
-                        className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-[#1B2535] border border-slate-800 text-slate-300 hover:text-cyan-300 transition-colors"
+                        className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-[#FFDC58] border-2 border-white text-[#111] shadow-[3px_3px_0_#fff] hover:-translate-y-0.5 transition-transform"
                         title={item.label}
                         aria-label={item.label}
                     >
@@ -77,7 +77,7 @@ export const ProfileSection = () => {
             <div className="grid grid-cols-3 gap-1.5 lg:gap-2 w-full">
                 <a
                     href="mailto:nguyentanninh123@gmail.com"
-                    className="flex items-center justify-center gap-1.5 py-2 bg-cyan-500/90 text-slate-950 rounded-md text-xs font-medium hover:bg-cyan-400 transition-colors px-2"
+                    className="flex items-center justify-center gap-1.5 py-2 bg-[#FFB2EF] text-[#111] border-2 border-white shadow-[3px_3px_0_#fff] rounded-md text-xs font-bold hover:-translate-y-0.5 transition-transform px-2"
                 >
                     <Send className="h-3.5 w-3.5" />
                     Contact
@@ -86,7 +86,7 @@ export const ProfileSection = () => {
                     href="/Nguyen_Tan_Ninh_cv.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-1.5 py-2 bg-[#1B2535] border border-slate-800 rounded-md text-xs text-slate-200 hover:text-white transition-colors px-2"
+                    className="flex items-center justify-center gap-1.5 py-2 bg-white border-2 border-white shadow-[3px_3px_0_#FFDC58] rounded-md text-xs font-bold text-[#111] hover:-translate-y-0.5 transition-transform px-2"
                 >
                     <Eye className="h-3.5 w-3.5" />
                     View CV
@@ -94,7 +94,7 @@ export const ProfileSection = () => {
                 <a
                     href="/Nguyen_Tan_Ninh_cv.pdf"
                     download
-                    className="flex items-center justify-center gap-1.5 py-2 bg-[#1B2535] border border-slate-800 rounded-md text-xs text-slate-200 hover:text-white transition-colors px-2"
+                    className="flex items-center justify-center gap-1.5 py-2 bg-white border-2 border-white shadow-[3px_3px_0_#FFDC58] rounded-md text-xs font-bold text-[#111] hover:-translate-y-0.5 transition-transform px-2"
                 >
                     <Download className="h-3.5 w-3.5" />
                     Download

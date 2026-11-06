@@ -4,17 +4,17 @@ import { CollapsibleSection } from "../ui/CollapsibleSection";
 export const BachhoaxanhExperience = () => {
     return (
         <div className="relative mb-8 group">
-            <div className="absolute -left-[22px] md:-left-[46px] top-3 w-3 h-3 rounded-full bg-[#0B1120] border border-slate-600 group-hover:border-cyan-400 transition-colors z-10">
+            <div className="absolute -left-[22px] md:-left-[46px] top-3 w-3 h-3 rounded-full bg-[#FFDC58] border-2 border-[#111] transition-colors z-10">
                 <div className="sr-only">Role</div>
             </div>
 
             <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                <span className="text-xs text-slate-500 bg-[#111827] border border-slate-800 px-3 py-1.5 rounded-md mb-4 md:mb-0">
+                <span className="text-xs font-bold tracking-wider text-[#fff] bg-[#111] border-2 border-[#111] px-3 py-1.5 rounded-md mb-4 md:mb-0">
                     05/2020 - 09/2025
                 </span>
             </div>
 
-            <div className="bg-[#111827] rounded-xl p-4 md:p-7 border border-slate-800 group-hover:border-cyan-500/30 transition-colors">
+            <div className="bg-white shadow-[4px_4px_0_#111] rounded-md p-4 md:p-7 border-2 border-[#111] group-hover:shadow-[7px_7px_0_#111] transition-colors">
                 <div className="mb-6 md:mb-10 text-left">
                     <a
                         href="https://www.bachhoaxanh.com"
@@ -22,7 +22,7 @@ export const BachhoaxanhExperience = () => {
                         rel="noopener noreferrer"
                         className="group/link inline-block"
                     >
-                        <h3 className="text-xl md:text-2xl font-semibold text-cyan-300 mb-2 flex items-center gap-3 group-hover/link:text-cyan-200 transition-colors">
+                        <h3 className="text-xl md:text-2xl font-bold text-[#111] mb-2 flex items-center gap-3 group-hover/link:underline transition-colors">
                             Bachhoaxanh (E-Commerce)
                             <svg
                                 className="w-6 h-6 opacity-0 -translate-y-1 translate-x-1 group-hover/link:opacity-100 group-hover/link:translate-y-0 group-hover/link:translate-x-0 transition-all duration-300"
@@ -39,7 +39,7 @@ export const BachhoaxanhExperience = () => {
                             </svg>
                         </h3>
                     </a>
-                    <p className="text-slate-400 text-xs md:text-sm font-bold mb-4 md:mb-6">
+                    <p className="text-[#333] text-xs md:text-sm font-bold mb-4 md:mb-6">
                         Software Engineer / .Net Developer
                     </p>
 
@@ -48,7 +48,7 @@ export const BachhoaxanhExperience = () => {
                             href="https://apps.apple.com/vn/app/bách-hóa-xanh/id1207511445"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="w-11 h-11 sm:w-auto sm:h-auto sm:px-4 sm:py-2 bg-black rounded-md text-sm font-medium text-white flex items-center justify-center gap-3 hover:bg-zinc-900 transition-colors border border-white/10"
+                            className="w-11 h-11 sm:w-auto sm:h-auto sm:px-4 sm:py-2 bg-[#111] rounded-md shadow-[4px_4px_0_#111] text-sm font-bold text-[#fff] flex items-center justify-center gap-3 hover:-translate-y-0.5 transition-transform border-2 border-[#111]"
                         >
                             <svg
                                 className="w-5 h-5 shrink-0"
@@ -63,7 +63,7 @@ export const BachhoaxanhExperience = () => {
                             href="https://play.google.com/store/apps/details?id=com.bachhoaxanh&pcampaignid=web_share"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="w-11 h-11 sm:w-auto sm:h-auto sm:px-4 sm:py-2 bg-white rounded-md text-sm font-medium text-slate-900 flex items-center justify-center gap-3 hover:bg-slate-50 transition-colors"
+                            className="w-11 h-11 sm:w-auto sm:h-auto sm:px-4 sm:py-2 bg-white rounded-md border-2 border-[#111] shadow-[4px_4px_0_#111] text-sm font-bold text-[#111] flex items-center justify-center gap-3 hover:-translate-y-0.5 transition-transform"
                         >
                             <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24">
                                 <path
@@ -91,7 +91,7 @@ export const BachhoaxanhExperience = () => {
                 <div className="space-y-8 md:space-y-12 text-left">
                     <div className="grid grid-cols-1 gap-y-8 md:gap-y-12">
                         <section>
-                            <h4 className="text-base font-semibold text-white mb-4 md:mb-5 flex items-center gap-3">
+                            <h4 className="text-base font-bold text-[#111] mb-4 md:mb-5 flex items-center gap-3">
                                 <span className="text-xl">🛠️</span> Key
                                 Responsibilities & Achievements
                             </h4>
@@ -104,9 +104,9 @@ export const BachhoaxanhExperience = () => {
                                         ].map((bullet, i) => (
                                             <li
                                                 key={i}
-                                                className="flex gap-3 text-xs md:text-sm font-bold text-slate-400"
+                                                className="flex gap-3 text-xs md:text-sm font-bold text-[#333]"
                                             >
-                                                <span className="text-cyan-500/50">
+                                                <span className="text-[#111]">
                                                     •
                                                 </span>
                                                 {bullet}
@@ -124,9 +124,9 @@ export const BachhoaxanhExperience = () => {
                                         ].map((bullet, i) => (
                                             <li
                                                 key={i}
-                                                className="flex gap-3 text-xs md:text-sm font-bold text-slate-400"
+                                                className="flex gap-3 text-xs md:text-sm font-bold text-[#333]"
                                             >
-                                                <span className="text-cyan-500/50">
+                                                <span className="text-[#111]">
                                                     •
                                                 </span>
                                                 {bullet}
@@ -143,9 +143,9 @@ export const BachhoaxanhExperience = () => {
                                         ].map((bullet, i) => (
                                             <li
                                                 key={i}
-                                                className="flex gap-3 text-xs md:text-sm font-bold text-slate-400"
+                                                className="flex gap-3 text-xs md:text-sm font-bold text-[#333]"
                                             >
-                                                <span className="text-cyan-500/50">
+                                                <span className="text-[#111]">
                                                     •
                                                 </span>
                                                 {bullet}
@@ -163,9 +163,9 @@ export const BachhoaxanhExperience = () => {
                                         ].map((bullet, i) => (
                                             <li
                                                 key={i}
-                                                className="flex gap-3 text-xs md:text-sm font-bold text-slate-400"
+                                                className="flex gap-3 text-xs md:text-sm font-bold text-[#333]"
                                             >
-                                                <span className="text-cyan-500/50">
+                                                <span className="text-[#111]">
                                                     •
                                                 </span>
                                                 {bullet}
@@ -186,12 +186,12 @@ export const BachhoaxanhExperience = () => {
                                 ].map((text, i) => (
                                     <div
                                         key={i}
-                                        className="flex gap-3 items-start p-3 md:p-4 bg-cyan-500/5 rounded-2xl border border-cyan-500/10"
+                                        className="flex gap-3 items-start p-3 md:p-4 bg-[#D7F5D7] rounded-md border-2 border-[#111] shadow-[4px_4px_0_#111]"
                                     >
-                                        <span className="text-emerald-400 font-bold">
+                                        <span className="text-[#111] font-bold">
                                             ✓
                                         </span>
-                                        <p className="text-xs md:text-sm font-bold text-slate-300">
+                                        <p className="text-xs md:text-sm font-bold text-[#111]">
                                             {text}
                                         </p>
                                     </div>

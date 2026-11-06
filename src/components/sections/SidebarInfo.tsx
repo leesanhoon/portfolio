@@ -37,10 +37,10 @@ export const SidebarInfo = () => {
     return (
         <div className="space-y-4 lg:space-y-8 px-1 mt-2 text-left">
             <section>
-                <h3 className="text-base font-semibold text-white mb-3">
+                <h3 className="text-base font-bold text-white mb-3">
                     About
                 </h3>
-                <p className="text-slate-400 text-sm leading-7">
+                <p className="text-neutral-300 text-sm leading-7">
                     .NET developer with 6 years of experience building and
                     maintaining backend services for e-commerce and travel
                     booking systems. I have worked on .NET Core migration, REST
@@ -53,7 +53,7 @@ export const SidebarInfo = () => {
                     {focusAreas.map((item) => (
                         <li
                             key={item}
-                            className="text-sm text-slate-400 leading-relaxed border-l border-slate-700 pl-3"
+                            className="text-sm text-neutral-300 leading-relaxed border-l-4 border-[#FFDC58] pl-3"
                         >
                             {item}
                         </li>
@@ -65,14 +65,14 @@ export const SidebarInfo = () => {
                 <div className="space-y-4">
                     {skillGroups.map((group) => (
                         <div key={group.title}>
-                            <p className="text-slate-500 text-xs font-medium mb-2">
+                            <p className="text-[#FFDC58] text-xs font-medium mb-2">
                                 {group.title}
                             </p>
                             <div className="flex flex-wrap gap-2">
                                 {group.skills.map((skill) => (
                                     <span
                                         key={skill}
-                                        className="px-2.5 py-1 bg-[#1B2535] border border-slate-800 text-xs text-slate-300 rounded-md"
+                                        className="px-2.5 py-1 bg-[#FFDC58] border-2 border-[#111] text-xs font-bold text-[#111] rounded-md"
                                     >
                                         {skill}
                                     </span>
@@ -84,14 +84,14 @@ export const SidebarInfo = () => {
             </CollapsibleSection>
 
             <CollapsibleSection title="Education">
-                <div className="rounded-xl border border-slate-800 bg-[#111827] p-4">
-                    <p className="text-slate-200 text-sm font-medium leading-6">
+                <div className="rounded-md border-2 border-white bg-[#1c1c1c] p-4">
+                    <p className="text-white text-sm font-medium leading-6">
                         Bachelor of Software Engineering
                     </p>
-                    <p className="mt-1 text-cyan-300 text-xs font-medium">
+                    <p className="mt-1 text-[#FFDC58] text-xs font-medium">
                         CMU-based Program
                     </p>
-                    <p className="mt-3 text-slate-500 text-sm">
+                    <p className="mt-3 text-[#FFDC58] text-sm">
                         Van Lang University
                     </p>
                 </div>
@@ -101,7 +101,7 @@ export const SidebarInfo = () => {
                 <div className="flex flex-wrap gap-2">
                     {favorites.map((favorite) => {
                         const chipClassName =
-                            "inline-block px-2.5 py-1 bg-[#1B2535] border border-slate-800 text-xs text-slate-400 rounded-md transition-colors hover:text-cyan-300";
+                            "inline-block px-2.5 py-1 bg-[#C4A1FF] border-2 border-[#111] text-xs font-bold text-[#111] rounded-md transition-transform hover:-translate-y-0.5";
 
                         if (favorite.external) {
                             return (
@@ -132,16 +132,16 @@ export const SidebarInfo = () => {
 
             <CollapsibleSection title="Contact" className="pb-4 lg:pb-10">
                 <div className="space-y-3 text-sm">
-                    <p className="text-slate-400">
-                        <span className="text-slate-500">Phone: </span>
+                    <p className="text-neutral-300">
+                        <span className="text-[#FFDC58]">Phone: </span>
                         +84 966622483
                     </p>
-                    <p className="text-cyan-300 break-all">
-                        <span className="text-slate-500">Email: </span>
+                    <p className="text-[#FFDC58] break-all">
+                        <span className="text-[#FFDC58]">Email: </span>
                         nguyentanninh123@gmail.com
                     </p>
-                    <p className="text-slate-400">
-                        <span className="text-slate-500">Location: </span>
+                    <p className="text-neutral-300">
+                        <span className="text-[#FFDC58]">Location: </span>
                         Ho Chi Minh City
                     </p>
                 </div>

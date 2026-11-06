@@ -44,9 +44,9 @@ export const ProjectsSection = () => {
     return (
         <section className="mt-10 md:mt-16">
             <div className="flex items-center gap-4 mb-5 md:mb-8">
-                <h2 className="text-2xl md:text-3xl font-semibold text-white flex items-center gap-3">
+                <h2 className="text-2xl md:text-3xl font-bold text-[#111] flex items-center gap-3">
                     Selected Projects
-                    <div className="w-10 h-px bg-emerald-400/60"></div>
+                    <div className="w-10 h-3 bg-[#7FE07F] border-2 border-[#111]"></div>
                 </h2>
             </div>
 
@@ -61,32 +61,32 @@ export const ProjectsSection = () => {
                                 ? "noopener noreferrer"
                                 : undefined
                         }
-                        className="group bg-[#111827] rounded-xl p-4 md:p-5 border border-slate-800 hover:border-emerald-400/40 transition-colors flex flex-col min-h-0 lg:min-h-[280px]"
+                        className="group bg-white shadow-[4px_4px_0_#111] rounded-md p-4 md:p-5 border-2 border-[#111] hover:shadow-[7px_7px_0_#111] transition-colors flex flex-col min-h-0 lg:min-h-[280px]"
                     >
                         <div className="mb-4 flex items-start justify-between gap-4">
-                            <div className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-400/10 text-emerald-300">
+                            <div className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-[#7FE07F] border-2 border-[#111] text-[#111]">
                                 <project.icon className="h-4 w-4" />
                             </div>
-                            <ArrowUpRight className="h-4 w-4 text-slate-600 group-hover:text-emerald-300 transition-colors" />
+                            <ArrowUpRight className="h-4 w-4 text-[#555] group-hover:underline transition-colors" />
                         </div>
-                        <p className="text-emerald-300 text-xs font-medium mb-3 flex items-center gap-1.5">
+                        <p className="text-[#111] text-xs font-medium mb-3 flex items-center gap-1.5">
                             <Code2 className="h-3.5 w-3.5" />
                             {project.type}
                         </p>
-                        <h3 className="text-lg font-semibold text-white mb-3 group-hover:text-emerald-300 transition-colors">
+                        <h3 className="text-lg font-bold text-[#111] mb-3 group-hover:underline transition-colors">
                             {project.title}
                         </h3>
-                        <p className="text-slate-400 text-sm leading-6 mb-4">
+                        <p className="text-[#333] text-sm leading-6 mb-4">
                             {project.summary}
                         </p>
-                        <p className="text-slate-300 text-sm leading-6 mb-5">
+                        <p className="text-[#111] text-sm leading-6 mb-5">
                             {project.result}
                         </p>
                         <div className="mt-auto flex flex-wrap gap-2">
                             {project.tags.map((tag) => (
                                 <span
                                     key={tag}
-                                    className="px-2.5 py-1 bg-[#1B2535] text-slate-400 text-xs rounded-md"
+                                    className="px-2.5 py-1 bg-[#FFDC58] border-2 border-[#111] text-[#111] font-bold text-xs rounded-md"
                                 >
                                     {tag}
                                 </span>

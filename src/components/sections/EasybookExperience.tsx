@@ -4,17 +4,17 @@ import { CollapsibleSection } from "../ui/CollapsibleSection";
 export const EasybookExperience = () => {
     return (
         <div className="relative mb-8 lg:mb-20 group">
-            <div className="absolute -left-[22px] md:-left-[46px] top-3 w-3 h-3 rounded-full bg-[#0B1120] border border-cyan-400 z-10">
+            <div className="absolute -left-[22px] md:-left-[46px] top-3 w-3 h-3 rounded-full bg-[#FFDC58] border-2 border-[#111] z-10">
                 <div className="sr-only">Current role</div>
             </div>
 
             <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                <span className="text-xs text-slate-500 bg-[#111827] border border-slate-800 px-3 py-1.5 rounded-md mb-4 md:mb-0">
+                <span className="text-xs font-bold tracking-wider text-[#fff] bg-[#111] border-2 border-[#111] px-3 py-1.5 rounded-md mb-4 md:mb-0">
                     09/2025 - PRESENT
                 </span>
             </div>
 
-            <div className="bg-[#111827] rounded-xl p-4 md:p-7 border border-slate-800 group-hover:border-cyan-500/30 transition-colors">
+            <div className="bg-white shadow-[4px_4px_0_#111] rounded-md p-4 md:p-7 border-2 border-[#111] group-hover:shadow-[7px_7px_0_#111] transition-colors">
                 <div className="mb-5 md:mb-10 text-left">
                     <a
                         href="https://www.easybook.com"
@@ -22,7 +22,7 @@ export const EasybookExperience = () => {
                         rel="noopener noreferrer"
                         className="group/link inline-block"
                     >
-                        <h3 className="text-xl md:text-2xl font-semibold text-cyan-300 mb-2 flex items-center gap-3 group-hover/link:text-cyan-200 transition-colors">
+                        <h3 className="text-xl md:text-2xl font-bold text-[#111] mb-2 flex items-center gap-3 group-hover/link:underline transition-colors">
                             Easybook.com (Travel Booking System)
                             <svg
                                 className="w-6 h-6 opacity-0 -translate-y-1 translate-x-1 group-hover/link:opacity-100 group-hover/link:translate-y-0 group-hover/link:translate-x-0 transition-all duration-300"
@@ -39,12 +39,12 @@ export const EasybookExperience = () => {
                             </svg>
                         </h3>
                     </a>
-                    <p className="text-slate-400 text-xs md:text-sm font-bold mb-4 md:mb-6">
+                    <p className="text-[#333] text-xs md:text-sm font-bold mb-4 md:mb-6">
                         .NET Developer | 09/2025 - Present
                     </p>
 
-                    <div className="mb-5 md:mb-8 p-4 md:p-5 bg-cyan-500/5 border-l-4 border-cyan-500 rounded-r-2xl">
-                        <p className="text-slate-300 text-sm italic leading-relaxed">
+                    <div className="mb-5 md:mb-8 p-4 md:p-5 bg-[#FFF3B0] border-2 border-l-8 border-[#111] rounded-md">
+                        <p className="text-[#111] text-sm italic leading-relaxed">
                             Easybook is a leading land and sea travel booking
                             platform in Southeast Asia, providing ticketing
                             solutions for buses, ferries, trains, and car
@@ -57,7 +57,7 @@ export const EasybookExperience = () => {
                             href="https://apps.apple.com/sg/app/easybook-bus-train-ferry-tour/id668514565"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="w-11 h-11 sm:w-auto sm:h-auto sm:px-4 sm:py-2 bg-black rounded-md text-sm font-medium text-white flex items-center justify-center gap-3 hover:bg-zinc-900 transition-colors border border-white/10"
+                            className="w-11 h-11 sm:w-auto sm:h-auto sm:px-4 sm:py-2 bg-[#111] rounded-md shadow-[4px_4px_0_#111] text-sm font-bold text-[#fff] flex items-center justify-center gap-3 hover:-translate-y-0.5 transition-transform border-2 border-[#111]"
                         >
                             <svg
                                 className="w-5 h-5 shrink-0"
@@ -72,7 +72,7 @@ export const EasybookExperience = () => {
                             href="https://play.google.com/store/apps/details?id=easiphone.easibookbustickets&pcampaignid=web_share"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="w-11 h-11 sm:w-auto sm:h-auto sm:px-4 sm:py-2 bg-white rounded-md text-sm font-medium text-slate-900 flex items-center justify-center gap-3 hover:bg-slate-50 transition-colors"
+                            className="w-11 h-11 sm:w-auto sm:h-auto sm:px-4 sm:py-2 bg-white rounded-md border-2 border-[#111] shadow-[4px_4px_0_#111] text-sm font-bold text-[#111] flex items-center justify-center gap-3 hover:-translate-y-0.5 transition-transform"
                         >
                             <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24">
                                 <path
@@ -100,7 +100,7 @@ export const EasybookExperience = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 md:gap-y-16 mb-8 md:mb-16 text-left">
                     <div className="space-y-8 md:space-y-12">
                         <section>
-                            <h4 className="text-base font-semibold text-white mb-4 md:mb-5 flex items-center gap-3">
+                            <h4 className="text-base font-bold text-[#111] mb-4 md:mb-5 flex items-center gap-3">
                                 <span className="text-xl">🛠️</span> Core
                                 Responsibilities
                             </h4>
@@ -120,10 +120,10 @@ export const EasybookExperience = () => {
                                     },
                                 ].map((item, i) => (
                                     <li key={i} className="space-y-1">
-                                        <span className="block text-sm font-bold text-slate-200">
+                                        <span className="block text-sm font-bold text-[#111]">
                                             {item.title}
                                         </span>
-                                        <span className="block text-xs text-slate-400 font-medium leading-relaxed">
+                                        <span className="block text-xs text-[#333] font-medium leading-relaxed">
                                             {item.desc}
                                         </span>
                                     </li>
@@ -134,7 +134,7 @@ export const EasybookExperience = () => {
 
                     <div className="space-y-8 md:space-y-12">
                         <section>
-                            <h4 className="text-base font-semibold text-white mb-4 md:mb-5 flex items-center gap-3">
+                            <h4 className="text-base font-bold text-[#111] mb-4 md:mb-5 flex items-center gap-3">
                                 <span className="text-xl">🏆</span> Key
                                 Achievements
                             </h4>
@@ -146,12 +146,12 @@ export const EasybookExperience = () => {
                                 ].map((text, i) => (
                                     <div
                                         key={i}
-                                        className="p-3 md:p-4 bg-cyan-500/5 rounded-2xl border border-cyan-500/10 flex gap-3 items-start"
+                                        className="p-3 md:p-4 bg-[#D7F5D7] rounded-md border-2 border-[#111] shadow-[4px_4px_0_#111] flex gap-3 items-start"
                                     >
-                                        <span className="text-cyan-400 text-lg font-bold">
+                                        <span className="text-[#111] text-lg font-bold">
                                             ✓
                                         </span>
-                                        <p className="text-sm font-bold text-slate-300 leading-snug">
+                                        <p className="text-sm font-bold text-[#111] leading-snug">
                                             {text}
                                         </p>
                                     </div>
@@ -214,14 +214,14 @@ export const EasybookExperience = () => {
                         ].map((project) => (
                             <div
                                 key={project.id}
-                                className="p-4 md:p-6 bg-[#0B1120]/45 rounded-xl border border-slate-800 hover:border-cyan-500/25 transition-colors"
+                                className="p-4 md:p-6 bg-[#F5F1EA] rounded-md border-2 border-[#111] hover:shadow-[7px_7px_0_#111] transition-colors"
                             >
                                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 md:gap-4 mb-4 md:mb-6">
                                     <div>
-                                        <h5 className="text-lg font-semibold text-white mb-1">
+                                        <h5 className="text-lg font-bold text-[#111] mb-1">
                                             {project.id}. {project.title}
                                         </h5>
-                                        <p className="text-slate-400 text-xs font-medium">
+                                        <p className="text-[#333] text-xs font-medium">
                                             {project.desc}
                                         </p>
                                     </div>
@@ -229,7 +229,7 @@ export const EasybookExperience = () => {
                                         {project.tags.map((tag) => (
                                             <span
                                                 key={tag}
-                                                className="px-2.5 py-1 bg-slate-800 text-xs text-slate-500 rounded-md"
+                                                className="px-2.5 py-1 bg-[#C4A1FF] border-2 border-[#111] text-xs font-bold text-[#111] rounded-md"
                                             >
                                                 {tag}
                                             </span>
@@ -240,9 +240,9 @@ export const EasybookExperience = () => {
                                     {project.bullets.map((bullet, i) => (
                                         <li
                                             key={i}
-                                            className="flex gap-3 text-xs md:text-sm font-bold text-slate-400 group/bullet"
+                                            className="flex gap-3 text-xs md:text-sm font-bold text-[#333] group/bullet"
                                         >
-                                            <span className="text-cyan-500 opacity-50">
+                                            <span className="text-[#111] opacity-50">
                                                 ●
                                             </span>
                                             {bullet}
