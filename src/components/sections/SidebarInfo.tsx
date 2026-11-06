@@ -4,7 +4,7 @@ import { CollapsibleSection } from "../ui/CollapsibleSection";
 const skillGroups = [
     {
         title: "Backend",
-        skills: [".NET", "C#", "ASP.NET Core Web API", "REST APIs"],
+        skills: [".NET", "C#", "ASP.NET Core Web API", "ABP Framework", "Microservices", "REST APIs"],
     },
     {
         title: "Database",
@@ -12,19 +12,20 @@ const skillGroups = [
     },
     {
         title: "Frontend / Mobile",
-        skills: ["React", "Next.js", "React Native", "TailwindCSS"],
+        skills: ["Angular", "React", "Next.js", "React Native", "TailwindCSS"],
     },
     {
         title: "Tools",
-        skills: ["Git", "Docker", "CI/CD", "AI coding assistants"],
+        skills: ["Git", "Docker", "Azure DevOps CI/CD", "Microsoft Entra ID", "AI coding agents"],
     },
 ];
 
 const focusAreas = [
+    "Enterprise CRM: role-based access, approvals, reporting",
     "Backend API development and maintenance",
     "Legacy .NET migration to .NET Core",
     "SQL query and API performance improvement",
-    "Documentation and task breakdown with AI tools",
+    "Orchestrating AI coding agents with human review gates",
 ];
 
 const favorites = [
@@ -41,10 +42,11 @@ export const SidebarInfo = () => {
                     About
                 </h3>
                 <p className="text-neutral-300 text-sm leading-7">
-                    .NET developer with 6 years of experience building and
-                    maintaining backend services for e-commerce and travel
-                    booking systems. I have worked on .NET Core migration, REST
-                    APIs, SQL Server, and React Native mobile features.
+                    Senior .NET developer with 6+ years building backend
+                    services for banking, e-commerce and travel booking
+                    systems. I have worked on .NET Core migration, REST APIs,
+                    SQL Server, enterprise CRM access control and AI-assisted
+                    delivery with coding agents.
                 </p>
             </section>
 

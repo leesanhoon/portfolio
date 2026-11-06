@@ -4,10 +4,15 @@ const aiTools = [
     "Codex",
     "Claude Code",
     "NotebookLM",
+    "Multi-agent Kanban",
     "ChatGPT",
 ];
 
 const aiUseCases = [
+    {
+        title: "Agent delivery team",
+        desc: "Run a team of coding agents that take Azure DevOps bugs, fix them, open pull requests and check the result on QA, with a human approving business and data decisions.",
+    },
     {
         title: "Planning",
         desc: "Break down requirements, migration work, and bug reports into smaller implementation steps.",
@@ -19,10 +24,6 @@ const aiUseCases = [
     {
         title: "Legacy analysis",
         desc: "Use AI assistants to read context faster, compare old and new flows, and prepare refactoring notes.",
-    },
-    {
-        title: "Delivery support",
-        desc: "Use AI coding tools as support during implementation while keeping final technical decisions under developer review.",
     },
 ];
 
@@ -40,9 +41,10 @@ export const AIExperience = () => {
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-8">
                     <div className="max-w-2xl">
                         <p className="text-[#333] text-sm md:text-base leading-7">
-                            I use AI tools mainly for reading documents,
-                            planning implementation work, understanding legacy
-                            code, and drafting technical notes.
+                            I use AI tools for reading documents, planning
+                            implementation work, understanding legacy code and,
+                            on my current project, running a team of AI coding
+                            agents under my review.
                         </p>
                     </div>
 

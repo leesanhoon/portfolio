@@ -2,6 +2,7 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { ProfileSection } from "@/components/sections/ProfileSection";
 import { SidebarInfo } from "@/components/sections/SidebarInfo";
+import { UtopExperience } from "@/components/sections/UtopExperience";
 import { EasybookExperience } from "@/components/sections/EasybookExperience";
 import { MWGExperience } from "@/components/sections/MWGExperience";
 import { BachhoaxanhExperience } from "@/components/sections/BachhoaxanhExperience";
@@ -32,6 +33,7 @@ import { ImpactMetrics } from "@/components/sections/ImpactMetrics";
 
                 <div class="relative pl-4 md:pl-10">
                     <div class="absolute left-0 top-1 bottom-0 w-[3px] bg-[#111]"></div>
+                    <UtopExperience />
                     <EasybookExperience client:load />
                     <MWGExperience client:load />
                     <BachhoaxanhExperience client:load />

@@ -5,12 +5,12 @@ export const EasybookExperience = () => {
     return (
         <div className="relative mb-8 lg:mb-20 group">
             <div className="absolute -left-[22px] md:-left-[46px] top-3 w-3 h-3 rounded-full bg-[#FFDC58] border-2 border-[#111] z-10">
-                <div className="sr-only">Current role</div>
+                <div className="sr-only">Role</div>
             </div>
 
             <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                 <span className="text-xs font-bold tracking-wider text-[#fff] bg-[#111] border-2 border-[#111] px-3 py-1.5 rounded-md mb-4 md:mb-0">
-                    09/2025 - PRESENT
+                    09/2025 - 08/2026
                 </span>
             </div>
 
@@ -40,7 +40,7 @@ export const EasybookExperience = () => {
                         </h3>
                     </a>
                     <p className="text-[#333] text-xs md:text-sm font-bold mb-4 md:mb-6">
-                        .NET Developer | 09/2025 - Present
+                        .NET Developer | 09/2025 - 08/2026
                     </p>
 
                     <div className="mb-5 md:mb-8 p-4 md:p-5 bg-[#FFF3B0] border-2 border-l-8 border-[#111] rounded-md">
