@@ -50,7 +50,7 @@ export const ProfileSection = () => {
                     <h1 className="text-lg lg:text-xl font-bold text-white mb-0.5">
                         Nguyen Tan Ninh
                     </h1>
-                    <p className="text-neutral-300 text-sm">Senior .NET Developer</p>
+                    <p className="text-neutral-300 text-sm">Full-stack .NET Developer</p>
                 </div>
             </div>
 

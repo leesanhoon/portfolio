@@ -42,8 +42,8 @@ export const SidebarInfo = () => {
                     About
                 </h3>
                 <p className="text-neutral-300 text-sm leading-7">
-                    Senior .NET developer with 6+ years building backend
-                    services for banking, e-commerce and travel booking
+                    Full-stack .NET developer with 6+ years building backend
+                    services and front ends for banking, e-commerce and travel booking
                     systems. I have worked on .NET Core migration, REST APIs,
                     SQL Server, enterprise CRM access control and AI-assisted
                     delivery with coding agents.

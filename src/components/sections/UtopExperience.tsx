@@ -46,7 +46,7 @@ export const UtopExperience = () => {
                         Enterprise CRM for a Vietnamese Commercial Bank
                     </h3>
                     <p className="text-[#333] text-xs md:text-sm font-bold mb-4 md:mb-6">
-                        Senior .NET Developer · Utop
+                        Full-stack .NET Developer · Utop
                     </p>
 
                     <CollapsibleSection title="About the project" defaultOpen={false}>
