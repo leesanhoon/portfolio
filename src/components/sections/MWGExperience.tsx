@@ -10,7 +10,7 @@ export const MWGExperience = () => {
 
             <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                 <span className="text-xs font-bold tracking-wider text-[#fff] bg-[#111] border-2 border-[#111] px-3 py-1.5 rounded-md mb-4 md:mb-0">
-                    01/2024 - 09/2025
+                    05/2020 - 09/2025
                 </span>
             </div>
 

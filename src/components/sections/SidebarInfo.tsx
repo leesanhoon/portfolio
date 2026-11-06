@@ -140,7 +140,7 @@ export const SidebarInfo = () => {
                     </p>
                     <p className="text-[#FFDC58] break-all">
                         <span className="text-[#FFDC58]">Email: </span>
-                        nguyentanninh123@gmail.com
+                        ninh.nguyen.code@gmail.com
                     </p>
                     <p className="text-neutral-300">
                         <span className="text-[#FFDC58]">Location: </span>

@@ -14,12 +14,12 @@ export const ProfileSection = () => {
         { label: "Phone", href: "tel:0966622483", icon: Phone },
         {
             label: "Email",
-            href: "mailto:nguyentanninh123@gmail.com",
+            href: "mailto:ninh.nguyen.code@gmail.com",
             icon: Mail,
         },
         {
             label: "LinkedIn",
-            href: "https://linkedin.com/in/nguyentanninh",
+            href: "https://linkedin.com/in/leesanhoon",
             icon: ExternalLink,
         },
         {
@@ -76,7 +76,7 @@ export const ProfileSection = () => {
 
             <div className="grid grid-cols-3 gap-1.5 lg:gap-2 w-full">
                 <a
-                    href="mailto:nguyentanninh123@gmail.com"
+                    href="mailto:ninh.nguyen.code@gmail.com"
                     className="flex items-center justify-center gap-1.5 py-2 bg-[#FFB2EF] text-[#111] border-2 border-white shadow-[3px_3px_0_#fff] rounded-md text-xs font-bold hover:-translate-y-0.5 transition-transform px-2"
                 >
                     <Send className="h-3.5 w-3.5" />
